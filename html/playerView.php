@@ -7,6 +7,7 @@
  */
 ?>
 <script src="../js/player.js"></script>
+
 <body>
     <audio controls id="audioPlayer" onplay="hello();">
         <source src="../src/001_en_peu_de_guerra.mp3" type="audio/mpeg"/>
