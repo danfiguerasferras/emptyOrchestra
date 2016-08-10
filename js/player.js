@@ -2,8 +2,13 @@
  * Created by blad3r on 08/08/2016.
  */
 
-// Lyrics will be loaded here
-var lyrics = ["test1", "test2", "test3", "test4", "test5", "test6", "test7", "etc"];
+// Create array with values from the lyrics JSON
+var lyricsArray = [];
+for (var prop in lyrics) {
+    lyricsArray.push(lyrics[prop]);
+}
+
+console.log(lyricsArray);
 // Line where the lyric is (by time of the player)
 var actualLine = 0;
 // Where I store the paragraph items
@@ -25,47 +30,50 @@ function getElements() {
             document.getElementById("cat_line_4"),
             document.getElementById("cat_line_5")
         ];
+        console.log(catLineParagraphs);
     }
-    console.log(catLineParagraphs);
-}
-
-function nextLine() {
-    actualLine++;
-    setLine(actualLine);
-}
-
-function previousLine() {
-    actualLine--;
-    setLine(actualLine);
 }
 
 function setLine(lineNumber) {
-
-    if(lineNumber == undefined){
-        lineNumber = getLyricLine();//actualLine;
+    // Check if they sent us the actual line
+    if (lineNumber == undefined) {
+        lineNumber = getLyricLine();
     }
-    console.log("inside setLine "+ lineNumber);
+
     getElements();
     for (var i = 0; i <= 4; i++) {
         var lyricLineNumber = lineNumber - 2 + i;
-        //if(lyricLineNumber >= 0) {
-            if(lyrics[lyricLineNumber] != undefined) {
-                catLineParagraphs[i].innerHTML = lyrics[lyricLineNumber];
-            }else{
-                catLineParagraphs[i].innerHTML = "";
-            }
-        //}
+
+        if (lyrics[lyricLineNumber] != undefined) {
+            catLineParagraphs[i].innerHTML = lyrics[lyricLineNumber];
+        } else {
+            catLineParagraphs[i].innerHTML = "";
+        }
     }
-    setTimeout(function() {
+    setTimeout(function () {
         setLine();       // repeat
     }, 300)
 }
 
 function getLyricLine(timeOnPlayer) {
-    if(timeOnPlayer == undefined){
+    // TODO test it!
+    if (timeOnPlayer == undefined) {
         timeOnPlayer = getSecondPlayer();
     }
-    console.log(timeOnPlayer);
-    return(parseInt(timeOnPlayer));
-    // TODO create a method to get the line using the time of the player
+    if (lyricsArray[actualLine] != undefined && timeOnPlayer >= lyricsArray[actualLine]["startTime"] && timeOnPlayer < lyricsArray[actualLine]["endTime"]) {
+        return actualLine;
+    } else if (lyricsArray[actualLine + 1] != undefined && timeOnPlayer >= lyricsArray[actualLine + 1]["startTime"] && timeOnPlayer < lyricsArray[actualLine + 1]["endTime"]) {
+        actualLine++;
+        return actualLine;
+    } else {
+        var res = -1;
+        for (var i = 0; i < lyricsArray.size && res==-1; i++){
+            if(lyricsArray[i]["startTime"]>=timeOnPlayer && lyricsArray[i]["endTime"]<timeOnPlayer){
+                res = i;
+                actualLine = res;
+            }
+        }
+        return res;
+    }
+    return -1;
 }

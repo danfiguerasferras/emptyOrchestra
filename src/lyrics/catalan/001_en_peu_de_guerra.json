@@ -1,0 +1,45 @@
+{
+  "lyrics": [
+    {
+      "id_line": 1,
+      "startTime": 0,
+      "endTime": 11.5,
+      "content": {
+        "catalan": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii",
+        "spanish": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii",
+        "english": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii"
+      }
+    },
+    {
+      "id_line": 2,
+      "startTime": 11.5,
+      "endTime": 12.5,
+      "content": {
+        "catalan": "TUM TUM!",
+        "spanish": "TUM TUM!",
+        "english": "TUM TUM!"
+      }
+    }
+    ,
+    {
+      "id_line": 3,
+      "startTime": 12.5,
+      "endTime": 18.5,
+      "content": {
+        "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+        "spanish": "Ooouo ooouooouo ooOoouooo oooooOooo",
+        "english": "Ooouo ooouooouo ooOoouooo oooooOooo"
+      }
+    },
+    {
+      "id_line": 4,
+      "startTime": 18.5,
+      "endTime": 19.4,
+      "content": {
+        "catalan": "TUM TUM!",
+        "spanish": "TUM TUM!",
+        "english": "TUM TUM!"
+      }
+    }
+  ]
+}
