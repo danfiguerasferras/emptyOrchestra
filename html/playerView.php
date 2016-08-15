@@ -36,6 +36,7 @@ $songToPlayName = "001_en_peu_de_guerra";
     </div>
 
     <script>
+        getElements();
         setLine(0);
     </script>
 </body>

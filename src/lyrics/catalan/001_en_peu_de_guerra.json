@@ -1,45 +1,572 @@
-{
-  "lyrics": [
-    {
-      "id_line": 1,
-      "startTime": 0,
-      "endTime": 11.5,
-      "content": {
-        "catalan": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii",
-        "spanish": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii",
-        "english": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii"
-      }
-    },
-    {
-      "id_line": 2,
-      "startTime": 11.5,
-      "endTime": 12.5,
-      "content": {
-        "catalan": "TUM TUM!",
-        "spanish": "TUM TUM!",
-        "english": "TUM TUM!"
-      }
+[
+  {
+    "id_line": 1,
+    "startTime": 0,
+    "endTime": 11.8,
+    "content": {
+      "catalan": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii",
+      "spanish": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii",
+      "english": "Tiririii tiri tiriiii tiri tiririri tiri tiririiriiiii"
     }
-    ,
-    {
-      "id_line": 3,
-      "startTime": 12.5,
-      "endTime": 18.5,
-      "content": {
-        "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
-        "spanish": "Ooouo ooouooouo ooOoouooo oooooOooo",
-        "english": "Ooouo ooouooouo ooOoouooo oooooOooo"
-      }
-    },
-    {
-      "id_line": 4,
-      "startTime": 18.5,
-      "endTime": 19.4,
-      "content": {
-        "catalan": "TUM TUM!",
-        "spanish": "TUM TUM!",
-        "english": "TUM TUM!"
-      }
+  },
+  {
+    "id_line": 2,
+    "startTime": 11.8,
+    "endTime": 12.5,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
     }
-  ]
-}
+  },
+  {
+    "id_line": 3,
+    "startTime": 12.5,
+    "endTime": 18.5,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "english": "Ooouo ooouooouo ooOoouooo oooooOooo"
+    }
+  },
+  {
+    "id_line": 4,
+    "startTime": 18.5,
+    "endTime": 19.2,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 5,
+    "startTime": 19.2,
+    "endTime": 24.8,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "english": "Ooouo ooouooouo ooOoouooo oooooOooo"
+    }
+  },
+  {
+    "id_line": 6,
+    "startTime": 24.8,
+    "endTime": 25.7,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 7,
+    "startTime": 25.7,
+    "endTime": 28.4,
+    "content": {
+      "catalan": "La teva mirada és el meu detonant",
+      "spanish": "-!",
+      "english": "-!"
+    }
+  },
+  {
+    "id_line": 8,
+    "startTime": 28.4,
+    "endTime": 31.6,
+    "content": {
+      "catalan": "Els peus deixen el terra, estem a menys d'un pam",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 9,
+    "startTime": 31.6,
+    "endTime": 35,
+    "content": {
+      "catalan": "La pulsació ens travessa amb el poder del llamp",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 10,
+    "startTime": 35,
+    "endTime": 37.3,
+    "content": {
+      "catalan": "La veu encesa entona un cant",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 11,
+    "startTime": 37.3,
+    "endTime": 40.8,
+    "content": {
+      "catalan": "Que noOoOo mor mai",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 12,
+    "startTime": 40.8,
+    "endTime": 44.2,
+    "content": {
+      "catalan": "Cremem la nit",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 13,
+    "startTime": 44.2,
+    "endTime": 47.5,
+    "content": {
+      "catalan": "L'amor en peu de guerra",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 14,
+    "startTime": 47.5,
+    "endTime": 50.3,
+    "content": {
+      "catalan": "Trenquem el llit",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 15,
+    "startTime": 50.3,
+    "endTime": 52.5,
+    "content": {
+      "catalan": "La vida ens puja al cap",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 16,
+    "startTime": 52.5,
+    "endTime": 54.8,
+    "content": {
+      "catalan": "I ens esclata com un gran Big Bang",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 17,
+    "startTime": 54.8,
+    "endTime": 60,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 18,
+    "startTime": 60,
+    "endTime": 61,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 19,
+    "startTime": 61,
+    "endTime": 66.2,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 20,
+    "startTime": 66.2,
+    "endTime": 67.2,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 21,
+    "startTime": 67.2,
+    "endTime": 69.9,
+    "content": {
+      "catalan": "El somni que ens impulsa és més fort que la por",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 22,
+    "startTime": 69.9,
+    "endTime": 73.2,
+    "content": {
+      "catalan": "L'univers sencer vibra a mercè d'un so",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 23,
+    "startTime": 73.2,
+    "endTime": 76.2,
+    "content": {
+      "catalan": "Avui la realitat supera la ficció",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 24,
+    "startTime": 76.2,
+    "endTime": 79.1,
+    "content": {
+      "catalan": "Avui ens oblidem del món",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 25,
+    "startTime": 79.1,
+    "endTime": 82.3,
+    "content": {
+      "catalan": "I deEeEe qui som",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 26,
+    "startTime": 82.3,
+    "endTime": 85.5,
+    "content": {
+      "catalan": "Cremem la nit",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 27,
+    "startTime": 85.5,
+    "endTime": 88.8,
+    "content": {
+      "catalan": "L'amor en peu de guerra",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 28,
+    "startTime": 88.8,
+    "endTime": 91.5,
+    "content": {
+      "catalan": "Trenquem el llit",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 29,
+    "startTime": 91.5,
+    "endTime": 94,
+    "content": {
+      "catalan": "La vida ens puja al cap",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 30,
+    "startTime": 94,
+    "endTime": 96.1,
+    "content": {
+      "catalan": "I ens esclata com un gran Big Bang",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 31,
+    "startTime": 96.1,
+    "endTime": 101.6,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 32,
+    "startTime": 101.3,
+    "endTime": 102.3,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 33,
+    "startTime": 102.3,
+    "endTime": 107.7,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 34,
+    "startTime": 107.7,
+    "endTime": 108.4,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 36,
+    "startTime": 108.4,
+    "endTime": 111.5,
+    "content": {
+      "catalan": "I més amunt",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 37,
+    "startTime": 111.2,
+    "endTime": 114.6,
+    "content": {
+      "catalan": "Creuant el ceEeEel més blau",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 38,
+    "startTime": 114.3,
+    "endTime": 117.2,
+    "content": {
+      "catalan": "T'està esperant",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 39,
+    "startTime": 117.2,
+    "endTime": 121.1,
+    "content": {
+      "catalan": "La teva estrella",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 40,
+    "startTime": 121.1,
+    "endTime": 123.7,
+    "content": {
+      "catalan": "Hi anirem junts",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 41,
+    "startTime": 123.7,
+    "endTime": 128,
+    "content": {
+      "catalan": "Sentirem el cor en pau",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 42,
+    "startTime": 128,
+    "endTime": 129.9,
+    "content": {
+      "catalan": "I ens omplirà",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 43,
+    "startTime": 129.9,
+    "endTime": 133.6,
+    "content": {
+      "catalan": "La llum més bella",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 44,
+    "startTime": 133.6,
+    "endTime": 139.8,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 45,
+    "startTime": 139.8,
+    "endTime": 140.5,
+    "content": {
+      "catalan": "CLAP CLAP!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 46,
+    "startTime": 140.5,
+    "endTime": 146,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 47,
+    "startTime": 146,
+    "endTime": 147,
+    "content": {
+      "catalan": "ooooooOOOOOO",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 48,
+    "startTime": 147,
+    "endTime": 147.7,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 49,
+    "startTime": 147.7,
+    "endTime": 151.1,
+    "content": {
+      "catalan": "Cremem la nit",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 50,
+    "startTime": 151.1,
+    "endTime": 154.4,
+    "content": {
+      "catalan": "L'amor en peu de guerra",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 51,
+    "startTime": 154.4,
+    "endTime": 157.5,
+    "content": {
+      "catalan": "Trenquem el llit",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 52,
+    "startTime": 157.5,
+    "endTime": 159.5,
+    "content": {
+      "catalan": "La vida ens puja al cap",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 53,
+    "startTime": 159.5,
+    "endTime": 161.8,
+    "content": {
+      "catalan": "I ens esclata com un gran Big Bang",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 54,
+    "startTime": 161.8,
+    "endTime": 167,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 55,
+    "startTime": 167,
+    "endTime": 167.7,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 56,
+    "startTime": 167.7,
+    "endTime": 173.4,
+    "content": {
+      "catalan": "Ooouo ooouooouo ooOoouooo oooooOooo",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 57,
+    "startTime": 173.4,
+    "endTime": 174,
+    "content": {
+      "catalan": "TUM TUM!",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  },
+  {
+    "id_line": 58,
+    "startTime": 174,
+    "endTime": 183,
+    "content": {
+      "catalan": "TAM TAM! TUM TUM! TAM TAM",
+      "spanish": "TUM TUM!",
+      "english": "TUM TUM!"
+    }
+  }
+]

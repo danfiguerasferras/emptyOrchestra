@@ -13,15 +13,20 @@ console.log(lyricsArray);
 var actualLine = 0;
 // Where I store the paragraph items
 var catLineParagraphs = 0;
-// Timer I use to check the lyrics
+
+// Player variable to store the item
+var player;
+
 
 function getSecondPlayer() {
-    var player = document.getElementById("audioPlayer");
     var currentTime = player.currentTime;
     return currentTime;
 }
 
 function getElements() {
+    if (player == undefined) {
+        player = document.getElementById("audioPlayer");
+    }
     if (catLineParagraphs == 0) {
         catLineParagraphs = [
             document.getElementById("cat_line_1"),
@@ -40,39 +45,47 @@ function setLine(lineNumber) {
         lineNumber = getLyricLine();
     }
 
-    getElements();
+    // If we have no line, let's pretend it's 0
+    if (lineNumber == -1) {
+        console.log("Error, for some reason the lineNumber it's -1");
+        lineNumber = 0;
+    }
+
     for (var i = 0; i <= 4; i++) {
         var lyricLineNumber = lineNumber - 2 + i;
 
         if (lyrics[lyricLineNumber] != undefined) {
-            catLineParagraphs[i].innerHTML = lyrics[lyricLineNumber];
+            catLineParagraphs[i].innerHTML = lyricLineNumber+": "+lyrics[lyricLineNumber]["content"]["catalan"];
         } else {
             catLineParagraphs[i].innerHTML = "";
         }
     }
     setTimeout(function () {
         setLine();       // repeat
-    }, 300)
+    }, 100)
 }
 
 function getLyricLine(timeOnPlayer) {
-    // TODO test it!
     if (timeOnPlayer == undefined) {
         timeOnPlayer = getSecondPlayer();
     }
+    // If same line
     if (lyricsArray[actualLine] != undefined && timeOnPlayer >= lyricsArray[actualLine]["startTime"] && timeOnPlayer < lyricsArray[actualLine]["endTime"]) {
         return actualLine;
+    // If next line
     } else if (lyricsArray[actualLine + 1] != undefined && timeOnPlayer >= lyricsArray[actualLine + 1]["startTime"] && timeOnPlayer < lyricsArray[actualLine + 1]["endTime"]) {
         actualLine++;
         return actualLine;
+    // If I don't know the line
     } else {
         var res = -1;
-        for (var i = 0; i < lyricsArray.size && res==-1; i++){
-            if(lyricsArray[i]["startTime"]>=timeOnPlayer && lyricsArray[i]["endTime"]<timeOnPlayer){
+        for (var i = 0; i<= lyricsArray.length && res == -1; i++) {
+            if (lyricsArray[i]["startTime"] <= timeOnPlayer && lyricsArray[i]["endTime"] > timeOnPlayer) {
                 res = i;
                 actualLine = res;
             }
         }
+        console.log(res);
         return res;
     }
     return -1;
