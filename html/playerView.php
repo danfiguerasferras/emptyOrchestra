@@ -8,6 +8,7 @@
 
 $songToPlayName = "001_en_peu_de_guerra";
 ?>
+<meta charset="UTF-8">
 <script type="text/javascript">
     // We load the content of the lyricsJson in the variable
     var lyrics = "";

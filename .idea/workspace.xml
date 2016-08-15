@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/player.css" afterPath="$PROJECT_DIR$/css/player.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/playerView.php" afterPath="$PROJECT_DIR$/html/playerView.php" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +37,21 @@
       <file leaf-file-name="playerView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/playerView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="39" />
+            <state relative-caret-position="170">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv005e8b/Bv005f0a/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,8 +110,8 @@
         <option value="$PROJECT_DIR$/js/lyricManagement.js" />
         <option value="$PROJECT_DIR$/js/player.js" />
         <option value="$PROJECT_DIR$/src/lyrics/catalan/001_en_peu_de_guerra.json" />
-        <option value="$PROJECT_DIR$/html/playerView.php" />
         <option value="$PROJECT_DIR$/css/player.css" />
+        <option value="$PROJECT_DIR$/html/playerView.php" />
       </list>
     </option>
   </component>
@@ -359,7 +369,7 @@
       <workItem from="1470678078009" duration="756000" />
       <workItem from="1470755522270" duration="15509000" />
       <workItem from="1471197063870" duration="17948000" />
-      <workItem from="1471283403238" duration="1497000" />
+      <workItem from="1471283403238" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -410,11 +420,18 @@
       <option name="project" value="LOCAL" />
       <updated>1471279638928</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="about to finish, there's the line blank problem missing">
+      <created>1471284919921</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1471284919921</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40616000" />
+    <option name="totallyTimeSpent" value="41291000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,7 +483,8 @@
     <MESSAGE value="changed the subtitle for a Json + created the check second method" />
     <MESSAGE value="Catalan works well, Lyric complete!" />
     <MESSAGE value="trying to make it look cool" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to make it look cool" />
+    <MESSAGE value="about to finish, there's the line blank problem missing" />
+    <option name="LAST_COMMIT_MESSAGE" value="about to finish, there's the line blank problem missing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -676,10 +694,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BvSshSftp/Bv005e8b/Bv005f0a/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/playerView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
