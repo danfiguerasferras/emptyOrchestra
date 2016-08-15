@@ -13,7 +13,7 @@ body{
     margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    background: rgba(180, 180, 180, 0.15);
+    /*background: rgba(180, 180, 180, 0.15);*/
 }
 
 .lyricsLine{
@@ -58,45 +58,45 @@ body{
     display: inline-block;
 }
 
-#catalanLyrics #spanishLyrics #englishLyrics{
-    width: 33%;
 
-    margin: 0px;
-    padding: 0px;
-}
 
 #catalanLyrics{
-    float: left;
-    height: 332px;
-    width: 33%;
-    background: rgba(180, 120, 120, 0.15);
+    background: rgba(180, 180, 120, 0.4);
 }
 
 #spanishLyrics{
-    float: left;
-    height: 332px;
-    width: 33%;
-    background: rgba(120, 180, 120, 0.15);
+    background: rgba(180, 120, 180, 0.4);
 }
 
 #englishLyrics{
+    background: rgba(120, 180, 180, 0.4);
+}
+
+#catalanLyrics, #spanishLyrics, #englishLyrics{
     float: left;
-    height: 332px;
-    width: 33%;
-    background: rgba(120, 120, 180, 0.15);
+    height: 302px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 20px 10px 10px 10px;
+    width: 453px;
 }
 
 .lyricsLanguageTitle{
+    font-size: 20px;
     margin: 0px;
     padding: 0px;
+    padding-left: 50px;
     height: 32px;
 }
 
 .actualLyricsLine{
-    font-weight: bold;
+    color: #000000;
     display: list-item;
 }
 
 .lyricsContainer{
-    height: 300px;
+    text-align: center;
+    color: #111;
+    height: 270px;
+    line-height: calc(270px/5);
 }
