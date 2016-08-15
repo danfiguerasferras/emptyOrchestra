@@ -13,6 +13,8 @@ console.log(lyricsArray);
 var actualLine = 0;
 // Where I store the paragraph items
 var catLineParagraphs = 0;
+var espLineParagraphs = 0;
+var engLineParagraphs = 0;
 
 // Player variable to store the item
 var player;
@@ -37,6 +39,26 @@ function getElements() {
         ];
         console.log(catLineParagraphs);
     }
+    if (espLineParagraphs == 0) {
+        espLineParagraphs = [
+            document.getElementById("esp_line_1"),
+            document.getElementById("esp_line_2"),
+            document.getElementById("esp_line_3"),
+            document.getElementById("esp_line_4"),
+            document.getElementById("esp_line_5")
+        ];
+        console.log(catLineParagraphs);
+    }
+    if (engLineParagraphs == 0) {
+        engLineParagraphs = [
+            document.getElementById("eng_line_1"),
+            document.getElementById("eng_line_2"),
+            document.getElementById("eng_line_3"),
+            document.getElementById("eng_line_4"),
+            document.getElementById("eng_line_5")
+        ];
+        console.log(catLineParagraphs);
+    }
 }
 
 function setLine(lineNumber) {
@@ -55,9 +77,13 @@ function setLine(lineNumber) {
         var lyricLineNumber = lineNumber - 2 + i;
 
         if (lyrics[lyricLineNumber] != undefined) {
-            catLineParagraphs[i].innerHTML = lyricLineNumber+": "+lyrics[lyricLineNumber]["content"]["catalan"];
+            catLineParagraphs[i].innerHTML = lyrics[lyricLineNumber]["content"]["catalan"];
+            espLineParagraphs[i].innerHTML = lyrics[lyricLineNumber]["content"]["spanish"];
+            engLineParagraphs[i].innerHTML = lyrics[lyricLineNumber]["content"]["english"];
         } else {
             catLineParagraphs[i].innerHTML = "";
+            espLineParagraphs[i].innerHTML = "";
+            engLineParagraphs[i].innerHTML = "";
         }
     }
     setTimeout(function () {

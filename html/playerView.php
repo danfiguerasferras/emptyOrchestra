@@ -19,23 +19,54 @@ $songToPlayName = "001_en_peu_de_guerra";
 <link rel="stylesheet" type="text/css" href="../css/player.css">
 
 <body>
-    <audio controls id="audioPlayer">
-        <!-- TODO check all the file exist, etc -->
-        <source src="../src/music/<?php echo $songToPlayName; ?>.mp3" type="audio/mpeg"/>
-        Your browser does not support the audio tag.
-    </audio>
-    <div id="catalanLyrics">
-        <p class="lyricsLanguageTitle">Language: Catalan</p>
-        <div class="lyricsContainer">
-            <p id="cat_line_1" class="lyricsLine"></p>
-            <p id="cat_line_2" class="lyricsLine"></p>
-            <p id="cat_line_3" class="actualLyricsLine lyricsLine"></p>
-            <p id="cat_line_4" class="lyricsLine"></p>
-            <p id="cat_line_5" class="lyricsLine"></p>
+<div class="content">
+    <div class="songInformation">
+        <div class="songImageDiv">
+            <img src="../src/img/<?php echo $songToPlayName; ?>.jpg" id="songImage">
+        </div>
+        <div class="audioPlayer">
+            <audio controls id="audioPlayer">
+                <!-- TODO check all the file exist, etc -->
+                <source src="../src/music/<?php echo $songToPlayName; ?>.mp3" type="audio/mpeg"/>
+                Your browser does not support the audio tag.
+            </audio>
         </div>
     </div>
-
+    <div class="lyrics">
+        <div id="catalanLyrics">
+            <p class="lyricsLanguageTitle">Catalan</p>
+            <div class="lyricsContainer">
+                <p id="cat_line_1" class="lyricsLine"></p>
+                <p id="cat_line_2" class="lyricsLine"></p>
+                <p id="cat_line_3" class="actualLyricsLine lyricsLine"></p>
+                <p id="cat_line_4" class="lyricsLine"></p>
+                <p id="cat_line_5" class="lyricsLine"></p>
+            </div>
+        </div>
+        <div id="spanishLyrics">
+            <p class="lyricsLanguageTitle">Spanish</p>
+            <div class="lyricsContainer">
+                <p id="esp_line_1" class="lyricsLine"></p>
+                <p id="esp_line_2" class="lyricsLine"></p>
+                <p id="esp_line_3" class="actualLyricsLine lyricsLine"></p>
+                <p id="esp_line_4" class="lyricsLine"></p>
+                <p id="esp_line_5" class="lyricsLine"></p>
+            </div>
+        </div>
+        <div id="englishLyrics">
+            <p class="lyricsLanguageTitle">English</p>
+            <div class="lyricsContainer">
+                <p id="eng_line_1" class="lyricsLine"></p>
+                <p id="eng_line_2" class="lyricsLine"></p>
+                <p id="eng_line_3" class="actualLyricsLine lyricsLine"></p>
+                <p id="eng_line_4" class="lyricsLine"></p>
+                <p id="eng_line_5" class="lyricsLine"></p>
+            </div>
+        </div>
+    </div>
+</div>
     <script>
+        document.getElementById('audioPlayer').width=1000;
         getElements();
         setLine(0);
     </script>

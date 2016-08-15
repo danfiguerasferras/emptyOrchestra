@@ -1,3 +1,102 @@
+body{
+    font-family: "Century Gothic";
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/5.jpg");
+    overflow: hidden;
+}
+
+.content{
+    display: block;
+    width: auto;
+    height: 332px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background: rgba(180, 180, 180, 0.15);
+}
+
 .lyricsLine{
     display: list-item;
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#songImage{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.songImageDiv{
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.songInformation{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    float: left;
+}
+
+#audioPlayer{
+    margin: 0px;
+    padding: 0px;
+}
+
+.lyrics{
+    float: left;
+    display: inline-block;
+}
+
+#catalanLyrics #spanishLyrics #englishLyrics{
+    width: 33%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+#catalanLyrics{
+    float: left;
+    height: 332px;
+    width: 33%;
+    background: rgba(180, 120, 120, 0.15);
+}
+
+#spanishLyrics{
+    float: left;
+    height: 332px;
+    width: 33%;
+    background: rgba(120, 180, 120, 0.15);
+}
+
+#englishLyrics{
+    float: left;
+    height: 332px;
+    width: 33%;
+    background: rgba(120, 120, 180, 0.15);
+}
+
+.lyricsLanguageTitle{
+    margin: 0px;
+    padding: 0px;
+    height: 32px;
+}
+
+.actualLyricsLine{
+    font-weight: bold;
+    display: list-item;
+}
+
+.lyricsContainer{
+    height: 300px;
 }
