@@ -61,15 +61,15 @@ body{
 
 
 #catalanLyrics{
-    background: rgba(180, 180, 120, 0.4);
+    background: rgba(255, 255, 220, 0.4);
 }
 
 #spanishLyrics{
-    background: rgba(180, 120, 180, 0.4);
+    background: rgba(255, 220, 255, 0.4);
 }
 
 #englishLyrics{
-    background: rgba(120, 180, 180, 0.4);
+    background: rgba(220, 255, 255, 0.4);
 }
 
 #catalanLyrics, #spanishLyrics, #englishLyrics{
@@ -84,8 +84,7 @@ body{
 .lyricsLanguageTitle{
     font-size: 20px;
     margin: 0px;
-    padding: 0px;
-    padding-left: 50px;
+    padding: 0px 0px 0px 50px;
     height: 32px;
 }
 

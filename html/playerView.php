@@ -14,8 +14,8 @@ $songToPlayName = "001_en_peu_de_guerra";
     var lyrics = "";
     // TODO check all the file exist, etc.
     lyrics = <?php include_once "../src/lyrics/catalan/".$songToPlayName.".json"; ?>;
-    console.log(lyrics);
 </script>
+<script src="../js/externalLibraries/jquery.min.js"></script>
 <script src="../js/player.js"></script>
 <link rel="stylesheet" type="text/css" href="../css/player.css">
 
@@ -37,31 +37,31 @@ $songToPlayName = "001_en_peu_de_guerra";
         <div id="catalanLyrics">
             <p class="lyricsLanguageTitle">Catalan</p>
             <div class="lyricsContainer">
-                <p id="cat_line_1" class="lyricsLine"></p>
-                <p id="cat_line_2" class="lyricsLine"></p>
-                <p id="cat_line_3" class="actualLyricsLine lyricsLine"></p>
-                <p id="cat_line_4" class="lyricsLine"></p>
-                <p id="cat_line_5" class="lyricsLine"></p>
+                <p id="catalan_line_1" class="lyricsLine"></p>
+                <p id="catalan_line_2" class="lyricsLine"></p>
+                <p id="catalan_line_3" class="actualLyricsLine lyricsLine"></p>
+                <p id="catalan_line_4" class="lyricsLine"></p>
+                <p id="catalan_line_5" class="lyricsLine"></p>
             </div>
         </div>
         <div id="spanishLyrics">
             <p class="lyricsLanguageTitle">Spanish</p>
             <div class="lyricsContainer">
-                <p id="esp_line_1" class="lyricsLine"></p>
-                <p id="esp_line_2" class="lyricsLine"></p>
-                <p id="esp_line_3" class="actualLyricsLine lyricsLine"></p>
-                <p id="esp_line_4" class="lyricsLine"></p>
-                <p id="esp_line_5" class="lyricsLine"></p>
+                <p id="spanish_line_1" class="lyricsLine"></p>
+                <p id="spanish_line_2" class="lyricsLine"></p>
+                <p id="spanish_line_3" class="actualLyricsLine lyricsLine"></p>
+                <p id="spanish_line_4" class="lyricsLine"></p>
+                <p id="spanish_line_5" class="lyricsLine"></p>
             </div>
         </div>
         <div id="englishLyrics">
             <p class="lyricsLanguageTitle">English</p>
             <div class="lyricsContainer">
-                <p id="eng_line_1" class="lyricsLine"></p>
-                <p id="eng_line_2" class="lyricsLine"></p>
-                <p id="eng_line_3" class="actualLyricsLine lyricsLine"></p>
-                <p id="eng_line_4" class="lyricsLine"></p>
-                <p id="eng_line_5" class="lyricsLine"></p>
+                <p id="english_line_1" class="lyricsLine"></p>
+                <p id="english_line_2" class="lyricsLine"></p>
+                <p id="english_line_3" class="actualLyricsLine lyricsLine"></p>
+                <p id="english_line_4" class="lyricsLine"></p>
+                <p id="english_line_5" class="lyricsLine"></p>
             </div>
         </div>
     </div>

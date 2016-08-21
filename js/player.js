@@ -7,18 +7,15 @@ var lyricsArray = [];
 for (var prop in lyrics) {
     lyricsArray.push(lyrics[prop]);
 }
-
-console.log(lyricsArray);
+var languages = ["catalan", "spanish", "english"];
+//console.log(lyricsArray);
 // Line where the lyric is (by time of the player)
 var actualLine = 0;
 // Where I store the paragraph items
-var catLineParagraphs = 0;
-var espLineParagraphs = 0;
-var engLineParagraphs = 0;
+var lineParagraphs = 0;
 
 // Player variable to store the item
 var player;
-
 
 function getSecondPlayer() {
     var currentTime = player.currentTime;
@@ -29,35 +26,18 @@ function getElements() {
     if (player == undefined) {
         player = document.getElementById("audioPlayer");
     }
-    if (catLineParagraphs == 0) {
-        catLineParagraphs = [
-            document.getElementById("cat_line_1"),
-            document.getElementById("cat_line_2"),
-            document.getElementById("cat_line_3"),
-            document.getElementById("cat_line_4"),
-            document.getElementById("cat_line_5")
-        ];
-        console.log(catLineParagraphs);
-    }
-    if (espLineParagraphs == 0) {
-        espLineParagraphs = [
-            document.getElementById("esp_line_1"),
-            document.getElementById("esp_line_2"),
-            document.getElementById("esp_line_3"),
-            document.getElementById("esp_line_4"),
-            document.getElementById("esp_line_5")
-        ];
-        console.log(catLineParagraphs);
-    }
-    if (engLineParagraphs == 0) {
-        engLineParagraphs = [
-            document.getElementById("eng_line_1"),
-            document.getElementById("eng_line_2"),
-            document.getElementById("eng_line_3"),
-            document.getElementById("eng_line_4"),
-            document.getElementById("eng_line_5")
-        ];
-        console.log(catLineParagraphs);
+
+    if (lineParagraphs == 0) {
+        lineParagraphs = [];
+        for (var i = 0; i < languages.length; i++) {
+            var temporalArray = [];
+            for (var j = 1; j <= 5; j++) {
+                temporalArray.push($("#" + languages[i] + "_line_" + j));
+            }
+            console.log(languages[i]);
+            lineParagraphs[languages[i]] = temporalArray;
+        }
+        console.log(lineParagraphs);
     }
 }
 
@@ -77,13 +57,14 @@ function setLine(lineNumber) {
         var lyricLineNumber = lineNumber - 2 + i;
 
         if (lyrics[lyricLineNumber] != undefined) {
-            catLineParagraphs[i].innerHTML = lyrics[lyricLineNumber]["content"]["catalan"];
-            espLineParagraphs[i].innerHTML = lyrics[lyricLineNumber]["content"]["spanish"];
-            engLineParagraphs[i].innerHTML = lyrics[lyricLineNumber]["content"]["english"];
+            for (var j = 0;j<languages.length;j++){
+                console.log(lineParagraphs[languages[j]][i]);
+                lineParagraphs[languages[j]][i].html(lyrics[lyricLineNumber]["content"]["catalan"]);
+            }
         } else {
-            catLineParagraphs[i].innerHTML = "";
-            espLineParagraphs[i].innerHTML = "";
-            engLineParagraphs[i].innerHTML = "";
+            for (var j = 0;j<languages.length;j++) {
+                lineParagraphs[languages[j]].innerHTML = "";
+            }
         }
     }
     setTimeout(function () {
@@ -98,20 +79,20 @@ function getLyricLine(timeOnPlayer) {
     // If same line
     if (lyricsArray[actualLine] != undefined && timeOnPlayer >= lyricsArray[actualLine]["startTime"] && timeOnPlayer < lyricsArray[actualLine]["endTime"]) {
         return actualLine;
-    // If next line
+        // If next line
     } else if (lyricsArray[actualLine + 1] != undefined && timeOnPlayer >= lyricsArray[actualLine + 1]["startTime"] && timeOnPlayer < lyricsArray[actualLine + 1]["endTime"]) {
         actualLine++;
         return actualLine;
-    // If I don't know the line
+        // If I don't know the line
     } else {
         var res = -1;
-        for (var i = 0; i<= lyricsArray.length && res == -1; i++) {
+        for (var i = 0; i <= lyricsArray.length && res == -1; i++) {
             if (lyricsArray[i]["startTime"] <= timeOnPlayer && lyricsArray[i]["endTime"] > timeOnPlayer) {
                 res = i;
                 actualLine = res;
             }
         }
-        console.log(res);
+        //console.log(res);
         return res;
     }
     return -1;
