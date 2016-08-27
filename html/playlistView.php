@@ -14,7 +14,13 @@
                 <?php
                 for ($i=0; $i<25; $i++){
                 ?>
-                    <div id="song_information_<?php echo $i; ?>" itemNumber="<?php echo $i;?> " class="listItem"><p class="listText">song number <?php echo $i; ?></div>
+                    <div id="song_information_<?php echo $i; ?>" itemNumber="<?php echo $i;?> " class="listItem">
+                        <img src="../images/play-button.png" class="play_button" id="play_button_<?php echo $i; ?>">
+                        <p class="listText songTitle" id="">song number <?php echo $i; ?></p>
+                        <p class="listText songSinger">Song title</p>
+                        <p class="listText songAlbum">Other stuff</p>
+                        <p class="listText songInfo">YAY!</p>
+                    </div>
                     <div id="lyrics_song_<?php echo $i; ?>" class="song_lyrics">test</div>
                 <?php
                 }
