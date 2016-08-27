@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    color:azure;
+}
+#fullPage{
+    height: 100%;
+    width: 100%;
+    background-image: url("../images/5.jpg");
+    background-size: 100% 100%;
+}
+
+#menuBar{
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: aqua;
+    display: block;
+}
+
+#playlist{
+    padding: 100px 2% 30px 2%;
+    background-color: chartreuse;
+}
+
+.listItem{
+    height: 40px;
+    background-color: red;
+    border: solid 1px black;
+}
+
+.listText{
+    margin: 0px;
+    line-height: 40px;
+}
+
+#itemList{
+    border: solid 2px blue;
+}
+
+.song_lyrics{
+    height: 200px;
+    border: black;
+    background-color: blueviolet;
+    display: none;
+}

@@ -8,17 +8,18 @@
 
 $songToPlayName = "001_en_peu_de_guerra";
 ?>
-<meta charset="UTF-8">
-<script type="text/javascript">
-    // We load the content of the lyricsJson in the variable
-    var lyrics = "";
-    // TODO check all the file exist, etc.
-    lyrics = <?php include_once "../src/lyrics/catalan/".$songToPlayName.".json"; ?>;
-</script>
-<script src="../js/externalLibraries/jquery.min.js"></script>
-<script src="../js/player.js"></script>
-<link rel="stylesheet" type="text/css" href="../css/player.css">
-
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        // We load the content of the lyricsJson in the variable
+        var lyrics = "";
+        // TODO check all the file exist, etc.
+        lyrics = <?php include_once "../src/lyrics/".$songToPlayName.".json"; ?>;
+    </script>
+    <script src="../js/externalLibraries/jquery.min.js"></script>
+    <script src="../js/player.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/player.css">
+</head>
 <body>
 <div class="content">
     <div class="songInformation">
