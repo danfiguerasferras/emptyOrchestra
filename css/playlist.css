@@ -58,11 +58,13 @@ body{
     height: 30px;
     width: 30px;
     margin-top: 5px;
+    margin-left: 5px;
 }
 
 .songTitle{
-    position: absolute;
-    left: 5%;
+    /*position: absolute;*/
+    float: left;
+    margin-left: 10px;
 }
 
 .songSinger{

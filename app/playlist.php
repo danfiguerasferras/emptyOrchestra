@@ -5,4 +5,6 @@
  * Date: 08/08/2016
  * Time: 17:54
  */
-include("../html/playlistView.php");
+
+include_once("../config/mysql/connection.php");
+include_once("../html/playlistView.php");
