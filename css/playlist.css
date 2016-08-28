@@ -65,19 +65,27 @@ body{
     /*position: absolute;*/
     float: left;
     margin-left: 10px;
+    z-index: 2;
 }
 
 .songSinger{
     position: absolute;
     left: 35%;
+    z-index: 3;
 }
 
 .songAlbum{
     position: absolute;
     left: 60%;
+    z-index: 4;
 }
 
 .songFavorite{
     position: absolute;
-    left: 90%;
+    left: 95%;
+    z-index: 5;
+}
+
+.playlistPlayer{
+    /*display: none;*/
 }

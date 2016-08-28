@@ -11,7 +11,7 @@ class Song{
     var $name = "";
     var $singer = null;
     var $album = null;
-    var $filename = "";
+    var $file_name = "";
     var $favorite = false;
     var $added = null;
 
@@ -21,17 +21,17 @@ class Song{
      * @param string $name
      * @param null $singer
      * @param null $album
-     * @param string $filename
+     * @param string $file_name
      * @param bool $favorite
      * @param null $added
      */
-    public function __construct($id_song = 0, $name = "", $singer = null, $album = null, $filename = "", $favorite = false, $added = null)
+    public function __construct($id_song = 0, $name = "", $singer = null, $album = null, $file_name = "", $favorite = false, $added = null)
     {
         $this->id_song = $id_song;
         $this->name = $name;
         $this->singer = $singer;
         $this->album = $album;
-        $this->filename = $filename;
+        $this->file_name = $file_name;
         $this->favorite = $favorite;
         $this->added = $added;
     }
@@ -105,15 +105,15 @@ class Song{
      */
     public function getFilename()
     {
-        return $this->filename;
+        return $this->file_name;
     }
 
     /**
-     * @param string $filename
+     * @param string $file_name
      */
-    public function setFilename($filename)
+    public function setFilename($file_name)
     {
-        $this->filename = $filename;
+        $this->file_name = $file_name;
     }
 
     /**

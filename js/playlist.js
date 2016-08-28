@@ -10,8 +10,19 @@ $(document).ready(function(){
         }
 
     });
+
+    $(".play_button").click(function () {
+        pauseAllSongs();
+        var itemNumber = $(this).attr("itemNumber");
+        var playerItem = $("#audio_player_"+itemNumber);
+        playerItem.trigger("play");
+    });
 });
 
 function hideAllLyrics() {
     $(".song_lyrics").slideUp(200);
+}
+
+function pauseAllSongs() {
+    $(".playlistPlayer").trigger("pause");
 }
