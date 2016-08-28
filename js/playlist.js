@@ -38,4 +38,5 @@ function hideAllLyrics() {
 
 function pauseAllSongs() {
     $(".playlistPlayer").trigger("pause");
+    $(".play_button").attr("src", "../images/play-button.png");
 }
