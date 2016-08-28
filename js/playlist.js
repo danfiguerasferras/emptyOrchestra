@@ -12,10 +12,23 @@ $(document).ready(function(){
     });
 
     $(".play_button").click(function () {
-        pauseAllSongs();
         var itemNumber = $(this).attr("itemNumber");
-        var playerItem = $("#audio_player_"+itemNumber);
-        playerItem.trigger("play");
+        var playerItem = document.getElementById("audio_player_"+itemNumber);
+        // get the value before the pause to avoid the permanent play
+        var paused = playerItem.paused;
+        // Pause everything
+        pauseAllSongs();
+
+        // If it's paused, play. If not, pause.
+        if(paused){
+            playerItem.play();
+            this.src = "../images/pause-button.png";
+        }else{
+            playerItem.pause();
+            this.src = "../images/play-button.png";
+        }
+        // Avoid the div to slide down (when not specified)
+        return false;
     });
 });
 
