@@ -69,15 +69,15 @@ body{
 
 .songSinger{
     position: absolute;
-    left: 30%;
+    left: 35%;
 }
 
 .songAlbum{
     position: absolute;
-    left: 55%;
+    left: 60%;
 }
 
-.songInfo{
+.songFavorite{
     position: absolute;
-    left: 80%;
+    left: 90%;
 }

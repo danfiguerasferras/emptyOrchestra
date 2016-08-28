@@ -12,16 +12,16 @@
         <div id="playlist">
             <div id="itemList">
                 <?php
-                for ($i=0; $i<25; $i++){
+                foreach ($playlist->getSongs() as $song){
                 ?>
-                    <div id="song_information_<?php echo $i; ?>" itemNumber="<?php echo $i;?> " class="listItem">
-                        <img src="../images/play-button.png" class="play_button" id="play_button_<?php echo $i; ?>">
-                        <p class="listText songTitle" id="">song number <?php echo $i; ?></p>
-                        <p class="listText songSinger">Song title</p>
-                        <p class="listText songAlbum">Other stuff</p>
-                        <p class="listText songInfo">YAY!</p>
+                    <div id="song_information_<?php echo $song->id_song; ?>" itemNumber="<?php echo $song->id_song;?> " class="listItem">
+                        <img src="../images/play-button.png" class="play_button" id="play_button_<?php echo $song->id_song; ?>" songId="<?php echo $song->id_song; ?>">
+                        <p class="listText songTitle" id=""><?php echo $song->name; ?></p>
+                        <p class="listText songSinger"><?php echo $song->singer->name; ?></p>
+                        <p class="listText songAlbum"><?php echo $song->album->name; ?></p>
+                        <p class="listText songFavorite"><?php echo $song->favorite; ?></p>
                     </div>
-                    <div id="lyrics_song_<?php echo $i; ?>" class="song_lyrics">test</div>
+                    <div id="lyrics_song_<?php echo $song->id_song; ?>" class="song_lyrics">test</div>
                 <?php
                 }
                 ?>
