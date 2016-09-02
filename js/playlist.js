@@ -12,23 +12,15 @@ $(document).ready(function(){
     });
 
     $(".play_button").click(function () {
-        var itemNumber = $(this).attr("itemNumber");
-        var playerItem = document.getElementById("audio_player_"+itemNumber);
-        // get the value before the pause to avoid the permanent play
-        var paused = playerItem.paused;
-        // Pause everything
-        pauseAllSongs();
-
-        // If it's paused, play. If not, pause.
-        if(paused){
-            playerItem.play();
-            this.src = "../images/pause-button.png";
-        }else{
-            playerItem.pause();
-            this.src = "../images/play-button.png";
+        var shouldIReloadSong = playPauseSong(this);
+        if(shouldIReloadSong){
+            loadSong($(this).attr("songName"));
         }
-        // Avoid the div to slide down (when not specified)
         return false;
+    });
+
+    $(".song_lyrics").click(function () {
+        $(this).slideUp("fast");
     });
 });
 
@@ -36,7 +28,40 @@ function hideAllLyrics() {
     $(".song_lyrics").slideUp(200);
 }
 
-function pauseAllSongs() {
-    $(".playlistPlayer").trigger("pause");
-    $(".play_button").attr("src", "../images/play-button.png");
+function playPauseSong(playButton) {
+    var player = document.getElementById("audio_player");
+    var actualPlaying= $("#audio_player_source").attr("src");
+    var songToPlay = getSongPath($(playButton).attr("songName"));
+    var shouldIReloadSong = false;
+
+    if (actualPlaying == songToPlay){
+        if (player.paused) {
+            $(playButton).attr("src", "../images/pause-button.png");
+            player.play();
+        }else{
+            player.pause();
+            $(playButton).attr("src", "../images/play-button.png");
+        }
+
+    }else{
+        $("#audio_player").trigger("pause");
+        $(playButton).attr("src", "../images/pause-button.png");
+        shouldIReloadSong = true;
+    }
+    return shouldIReloadSong;
+}
+
+function loadSong(songName) {
+    var songPath = getSongPath(songName);
+    $.get(songPath).done(function () {
+        $("#audio_player_source").attr("src", songPath);
+        $("#audio_player").trigger("load");
+        $("#audio_player").trigger("play");
+    }).fail(function () {
+        alert("You tryin' to troll the troll?");
+    });
+}
+
+function getSongPath(songName) {
+    return "../src/music/"+songName+".mp3";
 }

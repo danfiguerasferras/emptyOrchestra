@@ -82,6 +82,8 @@ class Playlist
         if($this->playlist_id!=0){
             // TODO add a filter for playlists
         }
+        // Sorting the song
+        $select .= " ORDER BY songs.added ASC";
         if($res = $mysqli->query($select)){
             while ($row = $res->fetch_array()){
                 $album = new Album($row["id_album"], $row["name_album"], $row["added_album"]);

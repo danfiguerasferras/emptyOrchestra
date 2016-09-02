@@ -86,6 +86,6 @@ body{
     z-index: 5;
 }
 
-.playlistPlayer{
-    display: none;
+.hidden{
+    display: none !important;
 }
