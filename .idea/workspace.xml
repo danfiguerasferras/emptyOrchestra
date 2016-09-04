@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/menu/quoteClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/models/albumClass.php" afterPath="$PROJECT_DIR$/models/player/albumClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/models/playlistClass.php" afterPath="$PROJECT_DIR$/models/player/playlistClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/models/singerClass.php" afterPath="$PROJECT_DIR$/models/player/singerClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/models/songClass.php" afterPath="$PROJECT_DIR$/models/player/songClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/playlist.php" afterPath="$PROJECT_DIR$/app/playlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/playlist.css" afterPath="$PROJECT_DIR$/css/playlist.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/playlistView.php" afterPath="$PROJECT_DIR$/html/playlistView.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mysql/script_backups/empty_orchestra.sql" afterPath="$PROJECT_DIR$/config/mysql/script_backups/empty_orchestra.sql" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/mysql/config.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -59,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quoteClass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quoteClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+            <state relative-caret-position="136">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
               <folding>
                 <marker date="1472986124957" expanded="true" signature="665:690" ph="SELECT * fro... " />
                 <marker date="1472986124957" expanded="true" signature="665:701" ph="SELECT COUNT... quotes" />
@@ -313,6 +306,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script_backups" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -420,7 +435,7 @@
       <workItem from="1472298244313" duration="36636000" />
       <workItem from="1472835252127" duration="5344000" />
       <workItem from="1472844937636" duration="2307000" />
-      <workItem from="1472979582335" duration="6542000" />
+      <workItem from="1472979582335" duration="7049000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -562,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472848800537</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Quote System implemented.&#10;Mysqli class is now transferred from the controller to classes who require it instead of sending it to the method.">
+      <created>1472986183985</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1472986183985</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107511000" />
+    <option name="totallyTimeSpent" value="108018000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,7 +652,8 @@
     <MESSAGE value="Play/pause composition working" />
     <MESSAGE value="playing a different song now changes playing songs button to &quot;play&quot; instead of &quot;pause&quot;" />
     <MESSAGE value="Now it only loads one song per play button and clicking on the lyrics div slides it up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Now it only loads one song per play button and clicking on the lyrics div slides it up" />
+    <MESSAGE value="Quote System implemented.&#10;Mysqli class is now transferred from the controller to classes who require it instead of sending it to the method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Quote System implemented.&#10;Mysqli class is now transferred from the controller to classes who require it instead of sending it to the method." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -882,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mysql/script_backups/empty_orchestra.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/player/albumClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-327">
@@ -949,24 +965,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/mysql/config.php">
+    <entry file="file://$PROJECT_DIR$/config/mysql/script_backups/empty_orchestra.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        <state relative-caret-position="240">
+          <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        <state relative-caret-position="136">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
           <folding>
             <marker date="1472986124957" expanded="true" signature="665:690" ph="SELECT * fro... " />
             <marker date="1472986124957" expanded="true" signature="665:701" ph="SELECT COUNT... quotes" />
             <marker date="1472986124957" expanded="true" signature="1348:1385" ph="SELECT * fro... quotes" />
             <marker date="1472986124957" expanded="true" signature="1348:1386" ph="SELECT * fro... quotes" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mysql/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

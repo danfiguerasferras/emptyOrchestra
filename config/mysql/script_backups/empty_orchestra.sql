@@ -40,6 +40,41 @@ INSERT INTO `albums` (`id_album`, `name`, `added`) VALUES
 /*!40000 ALTER TABLE `albums` ENABLE KEYS */;
 
 
+-- Volcando estructura para tabla empty_orchestra.quotes
+DROP TABLE IF EXISTS `quotes`;
+CREATE TABLE IF NOT EXISTS `quotes` (
+  `id_quote` int(11) NOT NULL AUTO_INCREMENT,
+  `value` char(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No Quote',
+  `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_quote`)
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- Volcando datos para la tabla empty_orchestra.quotes: 0 rows
+/*!40000 ALTER TABLE `quotes` DISABLE KEYS */;
+INSERT INTO `quotes` (`id_quote`, `value`, `added`) VALUES
+	(1, 'Okay, let\'s dooo this', '2016-09-04 11:34:33'),
+	(2, 'Condom! 3, 2,... (som un riu riu som bala bala).. 3,2,1 *click*', '2016-09-04 11:34:45'),
+	(3, 'Bacalao bacalao bacalao', '2016-09-04 11:34:52'),
+	(4, '*walking* Boom! Cariño ruuun', '2016-09-04 11:34:58'),
+	(5, 'Blblblblblblbl xD', '2016-09-04 11:35:07'),
+	(6, 'I\'m from Hobbiton :D', '2016-09-04 11:37:06'),
+	(7, ':O', '2016-09-04 11:37:14'),
+	(8, 'Define emergency', '2016-09-04 11:37:22'),
+	(9, 'With great power comes great responsibility', '2016-09-04 11:37:28'),
+	(10, 'Te amo mucho mucho - cucurucho? - cucuruchísimo!', '2016-09-04 11:37:34'),
+	(11, 'Not an EMERGENCY', '2016-09-04 11:37:44'),
+	(12, 'Quiero abraSSSSaaarteeee', '2016-09-04 11:37:54'),
+	(13, 'Pero cariiiiiiiiño', '2016-09-04 11:38:00'),
+	(14, 'Carrrrrrrrrrriño...', '2016-09-04 11:38:05'),
+	(15, 'But soooooock', '2016-09-04 11:38:10'),
+	(16, 'Mona... Cmon... Mona... Cmon...', '2016-09-04 11:38:16'),
+	(17, 'Take the red pill and i show you how deep the rabbit hole goes', '2016-09-04 11:38:21'),
+	(18, 'Wanna make POPcorn?', '2016-09-04 11:39:28'),
+	(19, 'I have shy poo...', '2016-09-04 11:39:32'),
+	(20, 'I\'m... Puting make-up', '2016-09-04 11:39:36');
+/*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
+
+
 -- Volcando estructura para tabla empty_orchestra.singers
 DROP TABLE IF EXISTS `singers`;
 CREATE TABLE IF NOT EXISTS `singers` (
