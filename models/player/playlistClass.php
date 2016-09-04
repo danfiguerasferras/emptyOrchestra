@@ -5,19 +5,21 @@ class Playlist
     var $playlist_id = 0;
     var $name = "";
     var $songs = array();
+    private $mysqli;
 
     /**
      * Playlist constructor.
      * @param int $playlist_id
      * @param string $name
      */
-    public function __construct($playlist_id = 0, $name = "")
+    public function __construct($mysqli, $playlist_id = 0, $name = "")
     {
         include_once("songClass.php");
         include_once("albumClass.php");
         include_once("singerClass.php");
         $this->playlist_id = $playlist_id;
         $this->name = $name;
+        $this->mysqli = $mysqli;
     }
 
     /**
@@ -73,7 +75,7 @@ class Playlist
         array_push($this->songs, $songToAdd);
     }
 
-    public function loadSongs($mysqli){
+    public function loadSongs(){
         $select = "
         SELECT songs.*, albums.id_album, albums.name as name_album, albums.added as added_album, singers.id_singer, singers.name as name_singer, singers.added as added_singer
         FROM songs
@@ -84,7 +86,7 @@ class Playlist
         }
         // Sorting the song
         $select .= " ORDER BY songs.added ASC";
-        if($res = $mysqli->query($select)){
+        if($res = $this->mysqli->query($select)){
             while ($row = $res->fetch_array()){
                 $album = new Album($row["id_album"], $row["name_album"], $row["added_album"]);
                 $singer = new Singer($row["id_singer"], $row["name_singer"], $row["added_singer"]);
@@ -92,6 +94,9 @@ class Playlist
                 $this->addSong($song);
             }
             $res->close();
+        }else{
+            echo "error wtf? O.O";
+            die();
         }
     }
 }

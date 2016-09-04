@@ -7,7 +7,8 @@
 <body>
     <div id="fullPage">
         <div id="menuBar">
-            <p id="menuItem">Item of the menu</p>
+            <p class="menuItem" id="salutation">Hello Mona</p>
+            <p class="menuItem" id="quote"><?php echo $quoteClass->value; ?></p>
         </div>
         <div id="playlist">
             <div class="hidden" id="songPlayer">
