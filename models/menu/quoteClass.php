@@ -12,7 +12,7 @@ class quoteClass
     var $value;
     var $added;
     private $mysqli;
-    static protected $sessionLimitTime = 600; /* Seconds until you can get next quote */
+    static protected $sessionLimitTime = 1; /* Seconds until you can get next quote */
 
     /**
      * quoteClass constructor.
@@ -64,6 +64,20 @@ class quoteClass
             return true;
         }else{
             echo "oh oh...";
+            return false;
+            die();
+        }
+    }
+
+    function getQuoteIdFromRandom(){
+        $total = $this->countQuotes();
+        $quoteNumber = rand(1, $total);
+        $select = "SELECT id_quote from quotes LIMIT  ".$quoteNumber.", 1";
+        if ($res = $this->mysqli->query($select)) {
+            $row = $res->fetch_array();
+            return $row["id_quote"];
+        }else{
+            echo "OMG... You broke it";
             die();
         }
     }
@@ -71,9 +85,8 @@ class quoteClass
     function getRandomQuote()
     {
         if ($this->didQuoteTimeExpire()) {
-            $total = $this->countQuotes();
-            $selectedQuote = rand(1, $total);
-            if($this->getQuoteInformation($selectedQuote)){
+            $selectedQuoteId = $this->getQuoteIdFromRandom();
+            if($this->getQuoteInformation($selectedQuoteId)){
                 $_SESSION["actualQuote"] = $this->id_quote;
                 $_SESSION["quoteTime"] = date("YmdHis");
                 return $this;

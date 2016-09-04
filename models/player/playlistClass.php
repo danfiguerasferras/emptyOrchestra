@@ -1,5 +1,9 @@
 <?php
 
+include_once("songClass.php");
+include_once("albumClass.php");
+include_once("singerClass.php");
+
 class Playlist
 {
     var $playlist_id = 0;
@@ -14,9 +18,6 @@ class Playlist
      */
     public function __construct($mysqli, $playlist_id = 0, $name = "")
     {
-        include_once("songClass.php");
-        include_once("albumClass.php");
-        include_once("singerClass.php");
         $this->playlist_id = $playlist_id;
         $this->name = $name;
         $this->mysqli = $mysqli;
