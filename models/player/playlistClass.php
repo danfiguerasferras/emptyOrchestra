@@ -1,8 +1,8 @@
 <?php
 
-include_once("songClass.php");
-include_once("albumClass.php");
-include_once("singerClass.php");
+include_once(dirname(__FILE__)."/songClass.php");
+include_once(dirname(__FILE__)."/albumClass.php");
+include_once(dirname(__FILE__)."/singerClass.php");
 
 class Playlist
 {

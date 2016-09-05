@@ -6,13 +6,14 @@
  * Date: 04/09/2016
  * Time: 11:42
  */
+include_once(dirname(__FILE__)."/../session/sessionClass.php");
 class quoteClass
 {
     var $id_quote;
     var $value;
     var $added;
     private $mysqli;
-    static protected $sessionLimitTime = 1; /* Seconds until you can get next quote */
+    static protected $sessionLimitTime = 600; /* Seconds until you can get next quote */
 
     /**
      * quoteClass constructor.
@@ -20,7 +21,7 @@ class quoteClass
      * @param $value
      * @param $added
      */
-    public function __construct($mysqli, $id_quote = 0, $value = "", $added = null)
+    public function __construct($mysqli = null, $id_quote = 0, $value = "", $added = null)
     {
         $this->mysqli = $mysqli;
         $this->id_quote = $id_quote;
@@ -64,6 +65,7 @@ class quoteClass
             return true;
         }else{
             echo "oh oh...";
+            var_dump($id_quote);
             return false;
             die();
         }
@@ -71,8 +73,8 @@ class quoteClass
 
     function getQuoteIdFromRandom(){
         $total = $this->countQuotes();
-        $quoteNumber = rand(1, $total);
-        $select = "SELECT id_quote from quotes LIMIT  ".$quoteNumber.", 1";
+        $quoteNumber = rand(0, ($total-1));
+        $select = "SELECT id_quote from quotes LIMIT ".$quoteNumber.", 1";
         if ($res = $this->mysqli->query($select)) {
             $row = $res->fetch_array();
             return $row["id_quote"];

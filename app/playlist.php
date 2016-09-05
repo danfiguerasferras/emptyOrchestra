@@ -5,15 +5,14 @@
  * Date: 08/08/2016
  * Time: 17:54
  */
-session_start();
-
-include_once("../config/mysql/connection.php");
-include_once("../models/menu/quoteClass.php");
+include_once(dirname(__FILE__)."/../models/session/sessionClass.php");
+include_once(dirname(__FILE__)."/../config/mysql/connection.php");
+include_once(dirname(__FILE__)."/../models/menu/quoteClass.php");
 $quoteClass = new quoteClass($mysql_link);
 $quoteClass->getRandomQuote();
 
-include_once("../models/player/playlistClass.php");
+include_once(dirname(__FILE__)."/../models/player/playlistClass.php");
 $playlist = new Playlist($mysql_link, 0, "all");
 $playlist->loadSongs();
 
-include_once("../html/playlistView.php");
+include_once(dirname(__FILE__)."/../html/playlistView.php");

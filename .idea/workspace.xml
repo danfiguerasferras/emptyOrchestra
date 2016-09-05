@@ -4,14 +4,17 @@
     <bookmark url="file://$PROJECT_DIR$/config/environment/environmentClass.php" line="14" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/login.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/captcha/captchaClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/environment/environmentClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/login.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/config/mysql/config.php" afterPath="$PROJECT_DIR$/config/mysql/mysqlConfig.php" />
+    <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="Refactor on the file including, now it works better and using relative paths.&#10;Creating the">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/helpers/sanitizeClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/session/sessionClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/user/userClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login.php" afterPath="$PROJECT_DIR$/app/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/playlist.php" afterPath="$PROJECT_DIR$/app/playlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/captcha/captchaClass.php" afterPath="$PROJECT_DIR$/config/captcha/captchaClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mysql/connection.php" afterPath="$PROJECT_DIR$/config/mysql/connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/mysql/script_backups/empty_orchestra.sql" afterPath="$PROJECT_DIR$/config/mysql/script_backups/empty_orchestra.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/playerView.php" afterPath="$PROJECT_DIR$/html/playerView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/menu/quoteClass.php" afterPath="$PROJECT_DIR$/models/menu/quoteClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/player/playlistClass.php" afterPath="$PROJECT_DIR$/models/player/playlistClass.php" />
     </list>
@@ -55,63 +58,23 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/player.php">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+              <caret line="7" column="67" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/login.php">
+      <file leaf-file-name="userClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/user/userClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="748">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
               <folding>
-                <marker date="1473015916162" expanded="true" signature="133:409" ph="..." />
+                <marker date="1473105017604" expanded="true" signature="968:977" ph="SELECT * fro... users" />
+                <marker date="1473105017604" expanded="true" signature="968:1007" ph="SELECT * FRO... users" />
+                <marker date="1473105017604" expanded="true" signature="968:1008" ph="SELECT * FRO... users" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="albumClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/player/albumClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playlistClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/player/playlistClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-              <folding>
-                <marker date="1473015545053" expanded="true" signature="1400:1707" ph="SELECT songs... songs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="environmentClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environment/environmentClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -138,27 +101,31 @@
         <option value="$PROJECT_DIR$/js/lyricManagement.js" />
         <option value="$PROJECT_DIR$/src/lyrics/catalan/001_en_peu_de_guerra.json" />
         <option value="$PROJECT_DIR$/js/player.js" />
-        <option value="$PROJECT_DIR$/html/playerView.php" />
         <option value="$PROJECT_DIR$/css/player.css" />
         <option value="$PROJECT_DIR$/models/albumClass.php" />
         <option value="$PROJECT_DIR$/models/singerClass.php" />
         <option value="$PROJECT_DIR$/config/mysql/config.php" />
-        <option value="$PROJECT_DIR$/config/mysql/connection.php" />
         <option value="$PROJECT_DIR$/models/songClass.php" />
         <option value="$PROJECT_DIR$/models/playlistClass.php" />
         <option value="$PROJECT_DIR$/js/playlist.js" />
         <option value="$PROJECT_DIR$/css/playlist.css" />
-        <option value="$PROJECT_DIR$/app/playlist.php" />
         <option value="$PROJECT_DIR$/html/playlistView.php" />
-        <option value="$PROJECT_DIR$/models/menu/quoteClass.php" />
         <option value="$PROJECT_DIR$/config/captcha/captcha.php" />
         <option value="$PROJECT_DIR$/config/captcha/captchaConfig.php" />
         <option value="$PROJECT_DIR$/models/captcha/captchaClass.php" />
         <option value="$PROJECT_DIR$/config/environment/environmentClass.php" />
-        <option value="$PROJECT_DIR$/config/captcha/captchaClass.php" />
-        <option value="$PROJECT_DIR$/models/player/playlistClass.php" />
-        <option value="$PROJECT_DIR$/app/login.php" />
         <option value="$PROJECT_DIR$/html/login.php" />
+        <option value="$PROJECT_DIR$/models/helpers/sanitize.php" />
+        <option value="$PROJECT_DIR$/models/helpers/sanitizeClass.php" />
+        <option value="$PROJECT_DIR$/config/captcha/captchaClass.php" />
+        <option value="$PROJECT_DIR$/config/mysql/connection.php" />
+        <option value="$PROJECT_DIR$/html/playerView.php" />
+        <option value="$PROJECT_DIR$/models/player/playlistClass.php" />
+        <option value="$PROJECT_DIR$/app/playlist.php" />
+        <option value="$PROJECT_DIR$/models/session/sessionClass.php" />
+        <option value="$PROJECT_DIR$/models/menu/quoteClass.php" />
+        <option value="$PROJECT_DIR$/app/login.php" />
+        <option value="$PROJECT_DIR$/models/user/userClass.php" />
       </list>
     </option>
   </component>
@@ -235,10 +202,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="music" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -286,7 +249,133 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="session" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EmptyOrchestra" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysql" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script_backups" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,7 +511,7 @@
       <workItem from="1472298244313" duration="36636000" />
       <workItem from="1472835252127" duration="5344000" />
       <workItem from="1472844937636" duration="2307000" />
-      <workItem from="1472979582335" duration="16674000" />
+      <workItem from="1472979582335" duration="25933000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -578,11 +667,18 @@
       <option name="project" value="LOCAL" />
       <updated>1472986647462</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Getting started with the Login, now the captcha works...">
+      <created>1473016052191</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1473016052191</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117643000" />
+    <option name="totallyTimeSpent" value="126902000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,12 +691,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20362474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30010834" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11700975" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -611,7 +708,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -648,34 +744,14 @@
     <MESSAGE value="Now it only loads one song per play button and clicking on the lyrics div slides it up" />
     <MESSAGE value="Quote System implemented.&#10;Mysqli class is now transferred from the controller to classes who require it instead of sending it to the method." />
     <MESSAGE value="SQl attached with quotes" />
-    <option name="LAST_COMMIT_MESSAGE" value="SQl attached with quotes" />
+    <MESSAGE value="Getting started with the Login, now the captcha works..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting started with the Login, now the captcha works..." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lyrics/001_en_peu_de_guerra.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9503">
-          <caret line="559" column="5" selection-start-line="559" selection-start-column="5" selection-end-line="559" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/player.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/player.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -818,6 +894,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -847,13 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/playerView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -896,68 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/playlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mysql/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="93" column="56" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="56" />
-          <folding>
-            <marker date="1473004118710" expanded="true" signature="663:688" ph="SELECT * fro... " />
-            <marker date="1473004118710" expanded="true" signature="663:699" ph="SELECT COUNT... quotes" />
-            <marker date="1473004118710" expanded="true" signature="1346:1367" ph="SELECT * fro... quotes" />
-            <marker date="1473004118710" expanded="true" signature="1346:1384" ph="SELECT * fro... quotes" />
-            <marker date="1473004118710" expanded="true" signature="1929:1964" ph="SELECT id_qu... quotes" />
-            <marker date="1473004118710" expanded="true" signature="1929:1983" ph="SELECT id_qu... quotes" />
-            <marker date="1473004118710" expanded="true" signature="1929:1984" ph="SELECT id_qu... quotes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/playlistView.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/mysql/mysqlConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/captcha/captchaClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment/environmentClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -970,13 +982,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/player/playlistClass.php">
+    <entry file="file://$PROJECT_DIR$/config/environment/environmentClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <marker date="1473015545053" expanded="true" signature="1400:1707" ph="SELECT songs... songs" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -984,16 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <marker date="1473015916162" expanded="true" signature="133:409" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1001,8 +1001,116 @@
     <entry file="file://$PROJECT_DIR$/app/player.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mysql/mysqlConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/playerView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/helpers/sanitizeClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/mysql/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/captcha/captchaClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#9#91#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/player/playlistClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-882">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1473103616363" expanded="true" signature="1457:1764" ph="SELECT songs... songs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+          <folding>
+            <marker date="1473104840157" expanded="true" signature="736:761" ph="SELECT * fro... " />
+            <marker date="1473104840157" expanded="true" signature="736:772" ph="SELECT COUNT... quotes" />
+            <marker date="1473104840157" expanded="true" signature="1419:1440" ph="SELECT * fro... quotes" />
+            <marker date="1473104840157" expanded="true" signature="1419:1457" ph="SELECT * fro... quotes" />
+            <marker date="1473104840157" expanded="true" signature="2039:2073" ph="SELECT id_qu... quotes" />
+            <marker date="1473104840157" expanded="true" signature="2039:2092" ph="SELECT id_qu... quotes" />
+            <marker date="1473104840157" expanded="true" signature="2039:2093" ph="SELECT id_qu... quotes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="67" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user/userClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding>
+            <marker date="1473105017604" expanded="true" signature="968:977" ph="SELECT * fro... users" />
+            <marker date="1473105017604" expanded="true" signature="968:1007" ph="SELECT * FRO... users" />
+            <marker date="1473105017604" expanded="true" signature="968:1008" ph="SELECT * FRO... users" />
+          </folding>
         </state>
       </provider>
     </entry>

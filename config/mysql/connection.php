@@ -1,5 +1,5 @@
 <?php
-include_once("mysqlConfig.php");
+include_once(dirname(__FILE__)."/mysqlConfig.php");
 $mysql_link = mysqli_connect(MYSQL_IP, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE_NAME);
 
 if (!$mysql_link) {

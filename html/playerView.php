@@ -14,7 +14,7 @@ $songToPlayName = "001_en_peu_de_guerra";
         // We load the content of the lyricsJson in the variable
         var lyrics = "";
         // TODO check all the file exist, etc.
-        lyrics = <?php include_once "../src/lyrics/".$songToPlayName.".json"; ?>;
+        lyrics = <?php include_once dirname(__FILE__)."/../src/lyrics/".$songToPlayName.".json"; ?>;
     </script>
     <script src="../js/externalLibraries/jquery.min.js"></script>
     <script src="../js/player.js"></script>

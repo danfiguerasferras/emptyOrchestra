@@ -11,13 +11,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura de base de datos para empty_orchestra
-DROP DATABASE IF EXISTS `empty_orchestra`;
 CREATE DATABASE IF NOT EXISTS `empty_orchestra` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
 USE `empty_orchestra`;
 
 
 -- Volcando estructura para tabla empty_orchestra.albums
-DROP TABLE IF EXISTS `albums`;
 CREATE TABLE IF NOT EXISTS `albums` (
   `id_album` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No title' COMMENT 'name of the album',
@@ -41,15 +39,14 @@ INSERT INTO `albums` (`id_album`, `name`, `added`) VALUES
 
 
 -- Volcando estructura para tabla empty_orchestra.quotes
-DROP TABLE IF EXISTS `quotes`;
 CREATE TABLE IF NOT EXISTS `quotes` (
   `id_quote` int(11) NOT NULL AUTO_INCREMENT,
   `value` char(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No Quote',
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id_quote`)
-) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla empty_orchestra.quotes: 0 rows
+-- Volcando datos para la tabla empty_orchestra.quotes: 27 rows
 /*!40000 ALTER TABLE `quotes` DISABLE KEYS */;
 INSERT INTO `quotes` (`id_quote`, `value`, `added`) VALUES
 	(1, 'Okay, let\'s dooo this', '2016-09-04 11:34:33'),
@@ -71,12 +68,19 @@ INSERT INTO `quotes` (`id_quote`, `value`, `added`) VALUES
 	(17, 'Take the red pill and i show you how deep the rabbit hole goes', '2016-09-04 11:38:21'),
 	(18, 'Wanna make POPcorn?', '2016-09-04 11:39:28'),
 	(19, 'I have shy poo...', '2016-09-04 11:39:32'),
-	(20, 'I\'m... Puting make-up', '2016-09-04 11:39:36');
+	(20, 'I\'m... Puting make-up', '2016-09-04 11:39:36'),
+	(21, 'Oh daaaarn! Naaaais', '2016-09-04 17:52:21'),
+	(22, 'El cueeerpoooouu', '2016-09-04 17:52:34'),
+	(23, 'Yaaaataaaaa', '2016-09-04 17:52:41'),
+	(24, 'Burrito: Don\'t eat me please!', '2016-09-04 17:52:48'),
+	(25, 'I like you too much', '2016-09-04 17:52:58'),
+	(26, 'I love your ass... Eyes!', '2016-09-04 17:53:01'),
+	(27, 'smooth just like a silk-ah', '2016-09-04 18:03:55'),
+	(28, 'No sé a què et refereixes carinyo', '2016-09-05 19:51:47');
 /*!40000 ALTER TABLE `quotes` ENABLE KEYS */;
 
 
 -- Volcando estructura para tabla empty_orchestra.singers
-DROP TABLE IF EXISTS `singers`;
 CREATE TABLE IF NOT EXISTS `singers` (
   `id_singer` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(250) CHARACTER SET latin1 NOT NULL DEFAULT 'No name' COMMENT 'name of the singer/group',
@@ -96,7 +100,6 @@ INSERT INTO `singers` (`id_singer`, `name`, `added`) VALUES
 
 
 -- Volcando estructura para tabla empty_orchestra.songs
-DROP TABLE IF EXISTS `songs`;
 CREATE TABLE IF NOT EXISTS `songs` (
   `id_song` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No title' COMMENT 'name of the song',
@@ -122,6 +125,22 @@ INSERT INTO `songs` (`id_song`, `name`, `singer`, `album`, `file_name`, `favorit
 	(9, 'Quan somrius', 1, 9, '009_quan_somrius', 1, '2016-08-28 13:08:16'),
 	(10, 'Jo no ens passa', 5, 8, '010_ja_no_ens_passa', 0, '2016-08-28 13:11:30');
 /*!40000 ALTER TABLE `songs` ENABLE KEYS */;
+
+
+-- Volcando estructura para tabla empty_orchestra.users
+CREATE TABLE IF NOT EXISTS `users` (
+  `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `lastname` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `password` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- Volcando datos para la tabla empty_orchestra.users: 0 rows
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

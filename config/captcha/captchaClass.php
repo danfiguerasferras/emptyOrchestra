@@ -6,7 +6,7 @@
  * Time: 19:42
  */
 
-include_once(__DIR__."/../environment/environmentClass.php"); // This would include the library
+include_once(dirname(__FILE__)."/../environment/environmentClass.php"); // This would include the library
 
 class captchaClass{
 
