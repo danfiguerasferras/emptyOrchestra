@@ -6,6 +6,9 @@
  * Time: 17:54
  */
 include_once(dirname(__FILE__)."/../models/session/sessionClass.php");
+if(!sessionClass::checkSessionActive()){
+    sessionClass::redirectToLogin();
+}
 include_once(dirname(__FILE__)."/../config/mysql/connection.php");
 include_once(dirname(__FILE__)."/../models/menu/quoteClass.php");
 $quoteClass = new quoteClass($mysql_link);

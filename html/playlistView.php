@@ -1,13 +1,13 @@
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/playlist.css">
     <script src="../js/externalLibraries/jquery.min.js"></script>
     <script src="../js/playlist.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/playlist.css">
 </head>
 <body>
     <div id="fullPage">
         <div id="menuBar">
-            <p class="menuItem" id="salutation">Hello Mona</p>
+            <p class="menuItem" id="salutation">Hello <?php echo ucfirst($_SESSION["user_name"]); ?></p>
             <p class="menuItem" id="quote"><?php echo $quoteClass->value; ?></p>
         </div>
         <div id="playlist">

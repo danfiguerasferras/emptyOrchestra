@@ -9,22 +9,22 @@
 include_once(dirname(__FILE__)."/../session/sessionClass.php");
 class quoteClass
 {
-    var $id_quote;
+    var $quote_id;
     var $value;
     var $added;
     private $mysqli;
-    static protected $sessionLimitTime = 600; /* Seconds until you can get next quote */
+    static protected $sessionLimitTime = 3600; /* Seconds until you can get next quote */
 
     /**
      * quoteClass constructor.
-     * @param $id_quote
+     * @param $quote_id
      * @param $value
      * @param $added
      */
-    public function __construct($mysqli = null, $id_quote = 0, $value = "", $added = null)
+    public function __construct($mysqli = null, $quote_id = 0, $value = "", $added = null)
     {
         $this->mysqli = $mysqli;
-        $this->id_quote = $id_quote;
+        $this->quote_id = $quote_id;
         $this->value = $value;
         $this->added = $added;
     }
@@ -33,9 +33,14 @@ class quoteClass
     {
         $select = "SELECT COUNT(*) as total FROM quotes";
         if ($res = $this->mysqli->query($select)) {
-            $row = $res->fetch_array();
-            return $row["total"];
+            if($row = $res->fetch_array()){
+                return $row["total"];
+            }else{
+                echo "Empty Result";
+                return 0;
+            }
         } else {
+            echo "Empty Result";
             return 0;
         }
     }
@@ -54,18 +59,21 @@ class quoteClass
         }
     }
 
-    function getQuoteInformation($id_quote){
-        $select = "SELECT * from quotes WHERE id_quote = ".$id_quote;
+    function getQuoteInformation($quote_id){
+        $select = "SELECT * from quotes WHERE quote_id = ".$quote_id;
         if ($res = $this->mysqli->query($select)) {
-            $row = $res->fetch_array();
-            /* Define the quote values */
-            $this->id_quote = $row["id_quote"];
-            $this->value = $row["value"];
-            $this->added = $row["added"];
-            return true;
+            if($row = $res->fetch_array()) {
+                /* Define the quote values */
+                $this->quote_id = $row["quote_id"];
+                $this->value = $row["value"];
+                $this->added = $row["added"];
+                return true;
+            }else{
+                return false;
+            }
         }else{
             echo "oh oh...";
-            var_dump($id_quote);
+            var_dump($quote_id);
             return false;
             die();
         }
@@ -74,13 +82,20 @@ class quoteClass
     function getQuoteIdFromRandom(){
         $total = $this->countQuotes();
         $quoteNumber = rand(0, ($total-1));
-        $select = "SELECT id_quote from quotes LIMIT ".$quoteNumber.", 1";
+        $select = "SELECT quote_id from quotes LIMIT ".$quoteNumber.", 1";
         if ($res = $this->mysqli->query($select)) {
             $row = $res->fetch_array();
-            return $row["id_quote"];
+            return $row["quote_id"];
         }else{
             echo "OMG... You broke it";
             die();
+        }
+    }
+
+    function registerQuoteInDB($id_quote){
+        if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!= null){
+            $insert = 'INSERT INTO users_quotes (user_id, quote_id) VALUES ("'.$_SESSION["user_id"].'","'.$id_quote.'")';
+            $this->mysqli->query($insert);
         }
     }
 
@@ -89,7 +104,8 @@ class quoteClass
         if ($this->didQuoteTimeExpire()) {
             $selectedQuoteId = $this->getQuoteIdFromRandom();
             if($this->getQuoteInformation($selectedQuoteId)){
-                $_SESSION["actualQuote"] = $this->id_quote;
+                $this->registerQuoteInDB($this->quote_id);
+                $_SESSION["actualQuote"] = $this->quote_id;
                 $_SESSION["quoteTime"] = date("YmdHis");
                 return $this;
             }else{

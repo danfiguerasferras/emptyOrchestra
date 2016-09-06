@@ -11,7 +11,9 @@ include_once(dirname(__FILE__)."/../../models/helpers/sanitizeClass.php");
 
 class userClass
 {
+    var $mysqli;
     var $user_id;
+    var $userName;
     var $name;
     var $lastName;
     var $added;
@@ -25,9 +27,11 @@ class userClass
      * @param $added
      * @param $password
      */
-    public function __construct($user_id = 0, $name = "", $lastName = "", $added = null, $password = "")
+    public function __construct($mysqli = null, $user_id = 0, $userName = "", $name = "", $lastName = "", $added = null, $password = "")
     {
+        $this->mysqli = $mysqli;
         $this->user_id = $user_id;
+        $this->userName = $userName;
         $this->name = $name;
         $this->lastName = $lastName;
         $this->added = $added;
@@ -38,10 +42,31 @@ class userClass
 
     }
 
-    public function loadInfoByUserName($username){
-        $username = sanitizeClass::sanitizeText($username);
-        $select = "SELECT * FROM users WHERE username LIKE ".$username;
-        $this->name = $username;
-        return true;
+    public function loadInfoByUserName($userName){
+        $return = false;
+        if($this->mysqli!=null){
+            $userName = sanitizeClass::sanitizeText($userName);
+            $select = 'SELECT * FROM users WHERE user_name LIKE "'.$userName.'"';
+            if ($res = $this->mysqli->query($select)) {
+                if($row = $res->fetch_object()) {
+                    $this->user_id = $row->user_id;
+                    $this->userName = $row->user_name;
+                    $this->name = $row->name;
+                    $this->lastName = $row->last_name;
+                    $this->added = $row->added;
+                    $this->password = $row->password;
+                    $return = true;
+                }
+                else{
+                    $return = false;
+                }
+            }else{
+                $_SESSION["loginError"] = true;
+            }
+        }else{
+            echo "The MySQL is not available";
+            die();
+        }
+        return $return;
     }
 }

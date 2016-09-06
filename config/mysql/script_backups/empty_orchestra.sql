@@ -40,15 +40,15 @@ INSERT INTO `albums` (`id_album`, `name`, `added`) VALUES
 
 -- Volcando estructura para tabla empty_orchestra.quotes
 CREATE TABLE IF NOT EXISTS `quotes` (
-  `id_quote` int(11) NOT NULL AUTO_INCREMENT,
+  `quote_id` int(11) NOT NULL AUTO_INCREMENT,
   `value` char(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No Quote',
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id_quote`)
+  PRIMARY KEY (`quote_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla empty_orchestra.quotes: 27 rows
+-- Volcando datos para la tabla empty_orchestra.quotes: 28 rows
 /*!40000 ALTER TABLE `quotes` DISABLE KEYS */;
-INSERT INTO `quotes` (`id_quote`, `value`, `added`) VALUES
+INSERT INTO `quotes` (`quote_id`, `value`, `added`) VALUES
 	(1, 'Okay, let\'s dooo this', '2016-09-04 11:34:33'),
 	(2, 'Condom! 3, 2,... (som un riu riu som bala bala).. 3,2,1 *click*', '2016-09-04 11:34:45'),
 	(3, 'Bacalao bacalao bacalao', '2016-09-04 11:34:52'),
@@ -132,15 +132,35 @@ CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `lastname` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `last_name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `password` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- Volcando datos para la tabla empty_orchestra.users: 1 rows
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`user_id`, `user_name`, `name`, `last_name`, `password`, `added`) VALUES
+	(1, 'melonazo', 'Dan', 'Figueras', '$2y$08$XZfqmJnpqnbIxMvlS9LnqONxSdGKnCeFMH0jteD9cfOXDZZnjSg4C', '2016-09-06 19:06:43'),
+	(2, 'meloncete', 'Mona', 'Yamile', '$2y$08$XZfqmJnpqnbIxMvlS9LnqONxSdGKnCeFMH0jteD9cfOXDZZnjSg4C', '2016-09-06 21:28:24');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+
+
+-- Volcando estructura para tabla empty_orchestra.users_quotes
+CREATE TABLE IF NOT EXISTS `users_quotes` (
+  `user_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `quote_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `added` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY `user_id` (`user_id`),
+  KEY `quote_id` (`quote_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla empty_orchestra.users: 0 rows
-/*!40000 ALTER TABLE `users` DISABLE KEYS */;
-/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+-- Volcando datos para la tabla empty_orchestra.users_quotes: 0 rows
+/*!40000 ALTER TABLE `users_quotes` DISABLE KEYS */;
+INSERT INTO `users_quotes` (`user_id`, `quote_id`, `added`) VALUES
+	(2, 25, '2016-09-06 21:55:23'),
+	(2, 9, '2016-09-06 21:55:35');
+/*!40000 ALTER TABLE `users_quotes` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
