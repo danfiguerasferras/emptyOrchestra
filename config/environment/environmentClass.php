@@ -20,7 +20,7 @@ class environmentClass
     }
 
     static function isPro(){
-        if($_SERVER['REMOTE_ADDR'] == self::$prodIP){
+        if($_SERVER['REMOTE_ADDR'] != self::$localIP){
             return true;
         }else{
             return false;

@@ -11,11 +11,13 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura de base de datos para empty_orchestra
+DROP DATABASE IF EXISTS `empty_orchestra`;
 CREATE DATABASE IF NOT EXISTS `empty_orchestra` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
 USE `empty_orchestra`;
 
 
 -- Volcando estructura para tabla empty_orchestra.albums
+DROP TABLE IF EXISTS `albums`;
 CREATE TABLE IF NOT EXISTS `albums` (
   `id_album` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No title' COMMENT 'name of the album',
@@ -39,6 +41,7 @@ INSERT INTO `albums` (`id_album`, `name`, `added`) VALUES
 
 
 -- Volcando estructura para tabla empty_orchestra.quotes
+DROP TABLE IF EXISTS `quotes`;
 CREATE TABLE IF NOT EXISTS `quotes` (
   `quote_id` int(11) NOT NULL AUTO_INCREMENT,
   `value` char(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No Quote',
@@ -81,6 +84,7 @@ INSERT INTO `quotes` (`quote_id`, `value`, `added`) VALUES
 
 
 -- Volcando estructura para tabla empty_orchestra.singers
+DROP TABLE IF EXISTS `singers`;
 CREATE TABLE IF NOT EXISTS `singers` (
   `id_singer` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(250) CHARACTER SET latin1 NOT NULL DEFAULT 'No name' COMMENT 'name of the singer/group',
@@ -100,6 +104,7 @@ INSERT INTO `singers` (`id_singer`, `name`, `added`) VALUES
 
 
 -- Volcando estructura para tabla empty_orchestra.songs
+DROP TABLE IF EXISTS `songs`;
 CREATE TABLE IF NOT EXISTS `songs` (
   `id_song` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'No title' COMMENT 'name of the song',
@@ -128,6 +133,7 @@ INSERT INTO `songs` (`id_song`, `name`, `singer`, `album`, `file_name`, `favorit
 
 
 -- Volcando estructura para tabla empty_orchestra.users
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `user_name` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -138,7 +144,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla empty_orchestra.users: 1 rows
+-- Volcando datos para la tabla empty_orchestra.users: 2 rows
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 INSERT INTO `users` (`user_id`, `user_name`, `name`, `last_name`, `password`, `added`) VALUES
 	(1, 'melonazo', 'Dan', 'Figueras', '$2y$08$XZfqmJnpqnbIxMvlS9LnqONxSdGKnCeFMH0jteD9cfOXDZZnjSg4C', '2016-09-06 19:06:43'),
@@ -147,6 +153,7 @@ INSERT INTO `users` (`user_id`, `user_name`, `name`, `last_name`, `password`, `a
 
 
 -- Volcando estructura para tabla empty_orchestra.users_quotes
+DROP TABLE IF EXISTS `users_quotes`;
 CREATE TABLE IF NOT EXISTS `users_quotes` (
   `user_id` int(10) unsigned NOT NULL DEFAULT '0',
   `quote_id` int(10) unsigned NOT NULL DEFAULT '0',
@@ -155,7 +162,7 @@ CREATE TABLE IF NOT EXISTS `users_quotes` (
   KEY `quote_id` (`quote_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
--- Volcando datos para la tabla empty_orchestra.users_quotes: 0 rows
+-- Volcando datos para la tabla empty_orchestra.users_quotes: 2 rows
 /*!40000 ALTER TABLE `users_quotes` DISABLE KEYS */;
 INSERT INTO `users_quotes` (`user_id`, `quote_id`, `added`) VALUES
 	(2, 25, '2016-09-06 21:55:23'),
