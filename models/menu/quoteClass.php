@@ -118,4 +118,32 @@ class quoteClass
         }
         return $this;
     }
+
+    function getSeenQuotes($user_id_select = null){
+        if($user_id_select == null){
+            if(isset($_SESSION['user_id'])){
+                $user_id_select = $_SESSION['user_id'];
+            }else{
+                $user_id_select = 0;
+            }
+        }
+        $sql = 'SELECT quote_id as actual_quote, value, added,  
+        (SELECT COUNT(*) FROM users_quotes uq WHERE uq.quote_id = q.quote_id AND uq.user_id = '.$user_id_select.') as timesSeen
+        FROM quotes q';
+        if ($res = $this->mysqli->query($sql)) {
+            $totalQuotes = array();
+            while($row = $res->fetch_array()) {
+                $totalQuotes[] = [
+                    "actual_quote" => $row['actual_quote'],
+                    "value" => $row['value'],
+                    "added" => $row['added'],
+                    "timesSeen" => intval($row['timesSeen'])
+                ];
+            }
+            return $totalQuotes;
+        }else{
+            echo "OMG... You broke it... Again!";
+            die();
+        }
+    }
 }

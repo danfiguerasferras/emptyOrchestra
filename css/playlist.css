@@ -107,3 +107,9 @@ body{
 .hidden{
     display: none !important;
 }
+
+#quoteList{
+    background-color: darkmagenta;
+    padding: 60px 50px 50px 50px;
+    display: none;
+}

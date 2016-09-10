@@ -5,10 +5,7 @@ $(document).ready(function(){
         var lyricsItem = $("#lyrics_song_"+itemNumber);
         if(lyricsItem.css("display") == "none"){
             lyricsItem.slideDown(200);
-        }else{
-            lyricsItem.slideUp(200);
         }
-
     });
 
     $(".play_button").click(function () {
@@ -21,6 +18,19 @@ $(document).ready(function(){
 
     $(".song_lyrics").click(function () {
         $(this).slideUp("fast");
+    });
+
+    $("#menuBar").click(function () {
+        var quoteList = $("#quoteList");
+        if(quoteList.css("display") == "none"){
+            quoteList.slideDown(200);
+        }else{
+            quoteList.slideUp(200);
+        }
+    });
+
+    $("#quoteList").click(function () {
+        $(this).slideUp(200);
     });
 });
 

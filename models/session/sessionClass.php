@@ -36,9 +36,8 @@ class sessionClass
 
     static function createSession($idUser){
         // Used to check if the session is already created
-        if(!isset($_COOKIE["PHPSESSID"])){
-            session_start();
-        }
+        session_start();
+
         $_SESSION["user_id"] = $idUser;
         $_SESSION["sessionDate"] = date("YmdHis");
     }

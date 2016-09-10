@@ -6,4 +6,4 @@
  * Time: 17:54
  */
 
-header("Location:./app/player.php");
+header("Location:./app/playlist.php");
