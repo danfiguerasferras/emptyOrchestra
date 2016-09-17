@@ -59,7 +59,7 @@ function setLine(lineNumber) {
         if (lyrics[lyricLineNumber] != undefined) {
             for (var j = 0;j<languages.length;j++){
                 console.log(lineParagraphs[languages[j]][i]);
-                lineParagraphs[languages[j]][i].html(lyrics[lyricLineNumber]["content"]["catalan"]);
+                lineParagraphs[languages[j]][i].html(lyrics[lyricLineNumber]["content"][languages[j]]);
             }
         } else {
             for (var j = 0;j<languages.length;j++) {

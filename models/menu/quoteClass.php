@@ -50,7 +50,7 @@ class quoteClass
         if(!isset($_SESSION["quoteTime"]) || !isset($_SESSION["actualQuote"])){
             return true;
         }else{
-            $currentTime = date("YmdHis");
+            $currentTime = time();
             if(abs(($_SESSION["quoteTime"] - $currentTime))>self::$sessionLimitTime){
                 return true;
             }else{
@@ -95,7 +95,10 @@ class quoteClass
     function registerQuoteInDB($id_quote){
         if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!= null){
             $insert = 'INSERT INTO users_quotes (user_id, quote_id) VALUES ("'.$_SESSION["user_id"].'","'.$id_quote.'")';
-            $this->mysqli->query($insert);
+            error_log($insert);
+            if(!$this->mysqli->query($insert)){
+                error_log($this->mysqli->error);
+            }
         }
     }
 
@@ -106,7 +109,7 @@ class quoteClass
             if($this->getQuoteInformation($selectedQuoteId)){
                 $this->registerQuoteInDB($this->quote_id);
                 $_SESSION["actualQuote"] = $this->quote_id;
-                $_SESSION["quoteTime"] = date("YmdHis");
+                $_SESSION["quoteTime"] = time();
                 return $this;
             }else{
                 echo "Something went terribly wrong...";
