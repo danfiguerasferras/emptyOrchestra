@@ -45,22 +45,27 @@ class quoteClass
         }
     }
 
-    function didQuoteTimeExpire()
+    function getAssignedQuote()
     {
-        if(!isset($_SESSION["quoteTime"]) || !isset($_SESSION["actualQuote"])){
-            return true;
-        }else{
-            $currentTime = time();
-            if(abs(($_SESSION["quoteTime"] - $currentTime))>self::$sessionLimitTime){
-                return true;
-            }else{
-                return false;
+        if(isset($_SESSION["user_id"])){
+            $limitTime = time() - self::$sessionLimitTime;
+            $timeAsString = date("Y-m-d H:i:s", $limitTime);
+            $select = 'SELECT quote_id FROM users_quotes WHERE user_id = '.$_SESSION["user_id"].' AND added BETWEEN "'.$timeAsString.'" AND NOW() ORDER BY added DESC LIMIT 1';
+            error_log($select);
+            if ($res = $this->mysqli->query($select)){
+                if($row = $res->fetch_array()){
+                    return $row["quote_id"];
+                }else{
+                    return true;
+                }
             }
+        }else{
+            return true;
         }
     }
 
     function getQuoteInformation($quote_id){
-        $select = "SELECT * from quotes WHERE quote_id = ".$quote_id;
+        $select = "SELECT * FROM quotes WHERE quote_id = ".$quote_id;
         if ($res = $this->mysqli->query($select)) {
             if($row = $res->fetch_array()) {
                 /* Define the quote values */
@@ -93,21 +98,27 @@ class quoteClass
     }
 
     function registerQuoteInDB($id_quote){
-        if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!= null){
-            $insert = 'INSERT INTO users_quotes (user_id, quote_id) VALUES ("'.$_SESSION["user_id"].'","'.$id_quote.'")';
+        error_log("In the register function");
+        if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!= null) {
+            $insert = 'INSERT INTO users_quotes (user_id, quote_id) VALUES ("' . $_SESSION["user_id"] . '","' . $id_quote . '")';
             error_log($insert);
-            if(!$this->mysqli->query($insert)){
+            if (!$this->mysqli->query($insert)) {
                 error_log($this->mysqli->error);
             }
+        }else{
+            error_log("no debería estar aquí");
         }
     }
 
     function getRandomQuote()
     {
-        if ($this->didQuoteTimeExpire()) {
+        $actualQuote = $this->getAssignedQuote();
+        if (!$actualQuote) {
             $selectedQuoteId = $this->getQuoteIdFromRandom();
             if($this->getQuoteInformation($selectedQuoteId)){
+                error_log("about to register the quote");
                 $this->registerQuoteInDB($this->quote_id);
+                error_log("quote registered");
                 $_SESSION["actualQuote"] = $this->quote_id;
                 $_SESSION["quoteTime"] = time();
                 return $this;
@@ -116,7 +127,7 @@ class quoteClass
                 die();
             }
         }else{
-            $this->getQuoteInformation($_SESSION["actualQuote"]);
+            $this->getQuoteInformation($actualQuote);
             return $this;
         }
         return $this;

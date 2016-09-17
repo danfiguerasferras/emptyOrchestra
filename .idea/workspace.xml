@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/player.js" afterPath="$PROJECT_DIR$/js/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login.php" afterPath="$PROJECT_DIR$/app/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/playlist.php" afterPath="$PROJECT_DIR$/app/playlist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/menu/quoteClass.php" afterPath="$PROJECT_DIR$/models/menu/quoteClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/session/sessionClass.php" afterPath="$PROJECT_DIR$/models/session/sessionClass.php" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,21 +38,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="player.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/player.js">
+      <file leaf-file-name="playlist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quoteClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+              <folding>
+                <marker date="1474103563709" expanded="true" signature="737:762" ph="SELECT * fro... " />
+                <marker date="1474103563709" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1350" ph="SELECT * fro... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1366" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1367" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1411" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1412" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1429" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1467" ph="SELECT quote... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1317:1468" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="1859:1880" ph="SELECT * fro... quotes" />
+                <marker date="1474103563709" expanded="true" signature="1859:1897" ph="SELECT * fro... quotes" />
+                <marker date="1474103563709" expanded="true" signature="2567:2601" ph="SELECT id_qu... quotes" />
+                <marker date="1474103563709" expanded="true" signature="2567:2620" ph="SELECT id_qu... quotes" />
+                <marker date="1474103563709" expanded="true" signature="2567:2621" ph="SELECT id_qu... quotes" />
+                <marker date="1474103563709" expanded="true" signature="3029:3083" ph="INSERT INTO users_quotes... " />
+                <marker date="1474103563709" expanded="true" signature="3029:3114" ph="INSERT INTO users_quotes... " />
+                <marker date="1474103563709" expanded="true" signature="3029:3133" ph="INSERT INTO users_quotes... " />
+                <marker date="1474103563709" expanded="true" signature="4436:4634" ph="SELECT quote... quotes" />
+                <marker date="1474103563709" expanded="true" signature="4494:4578" ph="SELECT COUNT... users_quotes" />
+                <marker date="1474103563709" expanded="true" signature="4494:4579" ph="SELECT COUNT... users_quotes" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessionClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playerView.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/playerView.php">
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+            <state relative-caret-position="510">
+              <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -95,16 +141,16 @@
         <option value="$PROJECT_DIR$/models/security/passwordClass.php" />
         <option value="$PROJECT_DIR$/models/user/userClass.php" />
         <option value="$PROJECT_DIR$/html/login.php" />
-        <option value="$PROJECT_DIR$/app/login.php" />
         <option value="$PROJECT_DIR$/config/environment/environmentClass.php" />
         <option value="$PROJECT_DIR$/app/test.php" />
-        <option value="$PROJECT_DIR$/app/playlist.php" />
         <option value="$PROJECT_DIR$/html/playlistView.php" />
         <option value="$PROJECT_DIR$/css/playlist.css" />
         <option value="$PROJECT_DIR$/js/playlist.js" />
-        <option value="$PROJECT_DIR$/models/session/sessionClass.php" />
-        <option value="$PROJECT_DIR$/models/menu/quoteClass.php" />
         <option value="$PROJECT_DIR$/js/player.js" />
+        <option value="$PROJECT_DIR$/app/playlist.php" />
+        <option value="$PROJECT_DIR$/models/session/sessionClass.php" />
+        <option value="$PROJECT_DIR$/app/login.php" />
+        <option value="$PROJECT_DIR$/models/menu/quoteClass.php" />
       </list>
     </option>
   </component>
@@ -567,7 +613,7 @@
       <workItem from="1473455251128" duration="2479000" />
       <workItem from="1473497308884" duration="4223000" />
       <workItem from="1473596932647" duration="2603000" />
-      <workItem from="1474096061771" duration="566000" />
+      <workItem from="1474096061771" duration="5136000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -758,11 +804,18 @@
       <option name="project" value="LOCAL" />
       <updated>1473501523013</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Solved 2 bugs:&#10; - Time issue in the current quote&#10; - Language used in the player">
+      <created>1474096671402</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1474096671402</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145755000" />
+    <option name="totallyTimeSpent" value="150325000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,7 +861,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit" />
     <MESSAGE value="testing that everything is working fine" />
     <MESSAGE value="The lyrics follows the player time.&#10;Starting to create the lyrics" />
     <MESSAGE value="changed the subtitle for a Json + created the check second method" />
@@ -833,7 +885,8 @@
     <MESSAGE value="Creating the Session treatment, password encryption, session control, user implementation, quotes a user saw.&#10;TODO: I broke the redirect to the login... You have to solve it... (works in local, breaks in prod)" />
     <MESSAGE value="&quot;Solved&quot; issue of the IP in prod (if local else prod)... Not the best solution so far but I'm sleepy...&#10;Solved the redirect to Login" />
     <MESSAGE value="List of quotes Done! :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="List of quotes Done! :D" />
+    <MESSAGE value="Solved 2 bugs:&#10; - Time issue in the current quote&#10; - Language used in the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solved 2 bugs:&#10; - Time issue in the current quote&#10; - Language used in the player" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1096,38 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="127" column="55" selection-start-line="127" selection-start-column="55" selection-end-line="127" selection-end-column="55" />
-          <folding>
-            <marker date="1473621245299" expanded="true" signature="737:762" ph="SELECT * fro... " />
-            <marker date="1473621245299" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
-            <marker date="1473621245299" expanded="true" signature="1549:1570" ph="SELECT * fro... quotes" />
-            <marker date="1473621245299" expanded="true" signature="1549:1587" ph="SELECT * fro... quotes" />
-            <marker date="1473621245299" expanded="true" signature="2257:2291" ph="SELECT id_qu... quotes" />
-            <marker date="1473621245299" expanded="true" signature="2257:2310" ph="SELECT id_qu... quotes" />
-            <marker date="1473621245299" expanded="true" signature="2257:2311" ph="SELECT id_qu... quotes" />
-            <marker date="1473621245299" expanded="true" signature="2671:2725" ph="INSERT INTO users_quotes... " />
-            <marker date="1473621245299" expanded="true" signature="2671:2752" ph="INSERT INTO users_quotes... " />
-            <marker date="1473621245299" expanded="true" signature="2671:2767" ph="INSERT INTO users_quotes... " />
-            <marker date="1473621245299" expanded="true" signature="3876:4074" ph="SELECT quote... quotes" />
-            <marker date="1473621245299" expanded="true" signature="3934:4018" ph="SELECT COUNT... users_quotes" />
-            <marker date="1473621245299" expanded="true" signature="3934:4019" ph="SELECT COUNT... users_quotes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/playlistView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="78" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="78" />
-          <folding>
-            <marker date="1473500035153" expanded="true" signature="1380:2017" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/playlist.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1144,36 +1165,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/playlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-          <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="39" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1183,6 +1178,16 @@
         <state relative-caret-position="119">
           <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/playlistView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="78" />
+          <folding>
+            <marker date="1473500035153" expanded="true" signature="1380:2017" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1196,9 +1201,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="-188">
           <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+          <folding>
+            <marker date="1474103563709" expanded="true" signature="737:762" ph="SELECT * fro... " />
+            <marker date="1474103563709" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1350" ph="SELECT * fro... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1366" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1367" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1411" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1412" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1429" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1467" ph="SELECT quote... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1317:1468" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="1859:1880" ph="SELECT * fro... quotes" />
+            <marker date="1474103563709" expanded="true" signature="1859:1897" ph="SELECT * fro... quotes" />
+            <marker date="1474103563709" expanded="true" signature="2567:2601" ph="SELECT id_qu... quotes" />
+            <marker date="1474103563709" expanded="true" signature="2567:2620" ph="SELECT id_qu... quotes" />
+            <marker date="1474103563709" expanded="true" signature="2567:2621" ph="SELECT id_qu... quotes" />
+            <marker date="1474103563709" expanded="true" signature="3029:3083" ph="INSERT INTO users_quotes... " />
+            <marker date="1474103563709" expanded="true" signature="3029:3114" ph="INSERT INTO users_quotes... " />
+            <marker date="1474103563709" expanded="true" signature="3029:3133" ph="INSERT INTO users_quotes... " />
+            <marker date="1474103563709" expanded="true" signature="4436:4634" ph="SELECT quote... quotes" />
+            <marker date="1474103563709" expanded="true" signature="4494:4578" ph="SELECT COUNT... users_quotes" />
+            <marker date="1474103563709" expanded="true" signature="4494:4579" ph="SELECT COUNT... users_quotes" />
+          </folding>
         </state>
       </provider>
     </entry>

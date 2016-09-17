@@ -21,6 +21,11 @@ class sessionClass
         return "/EmptyOrchestra/app/playlist.php";
     }
 
+    static function sessionRestart(){
+        session_destroy();
+        session_start();
+    }
+
     static function checkSessionActive(){
         if(isset($_SESSION["user_id"]) && isset($_SESSION["sessionDate"])){
             $now = date("YmdHis");
