@@ -7,6 +7,7 @@
  */
 
 session_start();
+date_default_timezone_set("Europe/Andorra");
 class sessionClass
 {
     // Seconds for the session to expire, 0=never

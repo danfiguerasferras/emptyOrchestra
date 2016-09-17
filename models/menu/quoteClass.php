@@ -13,7 +13,7 @@ class quoteClass
     var $value;
     var $added;
     private $mysqli;
-    static protected $sessionLimitTime = 3600; /* Seconds until you can get next quote */
+    static protected $sessionLimitTime = 10; /* Seconds until you can get next quote */
 
     /**
      * quoteClass constructor.
@@ -49,18 +49,19 @@ class quoteClass
     {
         if(isset($_SESSION["user_id"])){
             $limitTime = time() - self::$sessionLimitTime;
+            $now = date("Y-m-d H:i:s");
             $timeAsString = date("Y-m-d H:i:s", $limitTime);
-            $select = 'SELECT quote_id FROM users_quotes WHERE user_id = '.$_SESSION["user_id"].' AND added BETWEEN "'.$timeAsString.'" AND NOW() ORDER BY added DESC LIMIT 1';
+            $select = 'SELECT quote_id FROM users_quotes WHERE user_id = '.$_SESSION["user_id"].' AND added BETWEEN "'.$timeAsString.'" AND "'.$now.'" ORDER BY added DESC LIMIT 1';
             error_log($select);
             if ($res = $this->mysqli->query($select)){
                 if($row = $res->fetch_array()){
                     return $row["quote_id"];
                 }else{
-                    return true;
+                    return false;
                 }
             }
         }else{
-            return true;
+            return false;
         }
     }
 
