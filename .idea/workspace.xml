@@ -4,7 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/config/environment/environmentClass.php" line="14" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
+    <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP&#10;- Quote time back to 3600s">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/menu/quoteClass.php" afterPath="$PROJECT_DIR$/models/menu/quoteClass.php" />
     </list>
@@ -35,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playlist.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playlist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/playlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+            <state relative-caret-position="306">
+              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="false" />
               </folding>
@@ -47,34 +47,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quoteClass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quoteClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="534">
+              <caret line="146" column="59" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
               <folding>
-                <marker date="1474104642065" expanded="true" signature="737:762" ph="SELECT * fro... " />
-                <marker date="1474104642065" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1390" ph="SELECT * fro... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1406" ph="SELECT * FRO... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1407" ph="SELECT * FRO... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1451" ph="SELECT * FRO... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1452" ph="SELECT * FRO... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1469" ph="SELECT * FRO... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1475" ph="SELECT quote... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1512" ph="SELECT quote... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1357:1513" ph="SELECT * FRO... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="1906:1927" ph="SELECT * fro... quotes" />
-                <marker date="1474104642065" expanded="true" signature="1906:1944" ph="SELECT * fro... quotes" />
-                <marker date="1474104642065" expanded="true" signature="2614:2648" ph="SELECT id_qu... quotes" />
-                <marker date="1474104642065" expanded="true" signature="2614:2667" ph="SELECT id_qu... quotes" />
-                <marker date="1474104642065" expanded="true" signature="2614:2668" ph="SELECT id_qu... quotes" />
-                <marker date="1474104642065" expanded="true" signature="3076:3130" ph="INSERT INTO users_quotes... " />
-                <marker date="1474104642065" expanded="true" signature="3076:3161" ph="INSERT INTO users_quotes... " />
-                <marker date="1474104642065" expanded="true" signature="3076:3180" ph="INSERT INTO users_quotes... " />
-                <marker date="1474104642065" expanded="true" signature="4483:4681" ph="SELECT quote... quotes" />
-                <marker date="1474104642065" expanded="true" signature="4541:4625" ph="SELECT COUNT... users_quotes" />
-                <marker date="1474104642065" expanded="true" signature="4541:4626" ph="SELECT COUNT... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="737:762" ph="SELECT * fro... " />
+                <marker date="1474104750810" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1390" ph="SELECT * fro... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1406" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1407" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1451" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1452" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1469" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1475" ph="SELECT quote... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1512" ph="SELECT quote... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1357:1513" ph="SELECT * FRO... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="1874:1895" ph="SELECT * fro... quotes" />
+                <marker date="1474104750810" expanded="true" signature="1874:1912" ph="SELECT * fro... quotes" />
+                <marker date="1474104750810" expanded="true" signature="2582:2616" ph="SELECT id_qu... quotes" />
+                <marker date="1474104750810" expanded="true" signature="2582:2635" ph="SELECT id_qu... quotes" />
+                <marker date="1474104750810" expanded="true" signature="2582:2636" ph="SELECT id_qu... quotes" />
+                <marker date="1474104750810" expanded="true" signature="2997:3051" ph="INSERT INTO users_quotes... " />
+                <marker date="1474104750810" expanded="true" signature="2997:3082" ph="INSERT INTO users_quotes... " />
+                <marker date="1474104750810" expanded="true" signature="2997:3101" ph="INSERT INTO users_quotes... " />
+                <marker date="1474104750810" expanded="true" signature="4267:4465" ph="SELECT quote... quotes" />
+                <marker date="1474104750810" expanded="true" signature="4325:4409" ph="SELECT COUNT... users_quotes" />
+                <marker date="1474104750810" expanded="true" signature="4325:4410" ph="SELECT COUNT... users_quotes" />
               </folding>
             </state>
           </provider>
@@ -83,8 +83,8 @@
       <file leaf-file-name="sessionClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="119">
+              <caret line="12" column="48" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -611,7 +611,7 @@
       <workItem from="1473455251128" duration="2479000" />
       <workItem from="1473497308884" duration="4223000" />
       <workItem from="1473596932647" duration="2603000" />
-      <workItem from="1474096061771" duration="6263000" />
+      <workItem from="1474096061771" duration="6375000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -823,11 +823,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474104235172</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP&#10;- Quote time back to 3600s">
+      <created>1474104711804</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1474104711804</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151452000" />
+    <option name="totallyTimeSpent" value="151564000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -873,7 +880,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed the subtitle for a Json + created the check second method" />
     <MESSAGE value="Catalan works well, Lyric complete!" />
     <MESSAGE value="trying to make it look cool" />
     <MESSAGE value="about to finish, there's the line blank problem missing" />
@@ -898,7 +904,8 @@
     <MESSAGE value="Solved 2 bugs:&#10; - Time issue in the current quote&#10; - Language used in the player" />
     <MESSAGE value="Session destroy on login created.&#10;The quote now it checks the DB." />
     <MESSAGE value="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP" />
+    <MESSAGE value="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP&#10;- Quote time back to 3600s" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP&#10;- Quote time back to 3600s" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1227,51 +1234,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/playlist.php">
+    <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        <state relative-caret-position="534">
+          <caret line="146" column="59" selection-start-line="146" selection-start-column="59" selection-end-line="146" selection-end-column="59" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="false" />
+            <marker date="1474104750810" expanded="true" signature="737:762" ph="SELECT * fro... " />
+            <marker date="1474104750810" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1390" ph="SELECT * fro... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1406" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1407" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1451" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1452" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1469" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1475" ph="SELECT quote... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1512" ph="SELECT quote... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1357:1513" ph="SELECT * FRO... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="1874:1895" ph="SELECT * fro... quotes" />
+            <marker date="1474104750810" expanded="true" signature="1874:1912" ph="SELECT * fro... quotes" />
+            <marker date="1474104750810" expanded="true" signature="2582:2616" ph="SELECT id_qu... quotes" />
+            <marker date="1474104750810" expanded="true" signature="2582:2635" ph="SELECT id_qu... quotes" />
+            <marker date="1474104750810" expanded="true" signature="2582:2636" ph="SELECT id_qu... quotes" />
+            <marker date="1474104750810" expanded="true" signature="2997:3051" ph="INSERT INTO users_quotes... " />
+            <marker date="1474104750810" expanded="true" signature="2997:3082" ph="INSERT INTO users_quotes... " />
+            <marker date="1474104750810" expanded="true" signature="2997:3101" ph="INSERT INTO users_quotes... " />
+            <marker date="1474104750810" expanded="true" signature="4267:4465" ph="SELECT quote... quotes" />
+            <marker date="1474104750810" expanded="true" signature="4325:4409" ph="SELECT COUNT... users_quotes" />
+            <marker date="1474104750810" expanded="true" signature="4325:4410" ph="SELECT COUNT... users_quotes" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        <state relative-caret-position="119">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/menu/quoteClass.php">
+    <entry file="file://$PROJECT_DIR$/app/playlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="45" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="306">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
-            <marker date="1474104642065" expanded="true" signature="737:762" ph="SELECT * fro... " />
-            <marker date="1474104642065" expanded="true" signature="737:773" ph="SELECT COUNT... quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1390" ph="SELECT * fro... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1406" ph="SELECT * FRO... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1407" ph="SELECT * FRO... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1451" ph="SELECT * FRO... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1452" ph="SELECT * FRO... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1469" ph="SELECT * FRO... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1475" ph="SELECT quote... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1512" ph="SELECT quote... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1357:1513" ph="SELECT * FRO... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="1906:1927" ph="SELECT * fro... quotes" />
-            <marker date="1474104642065" expanded="true" signature="1906:1944" ph="SELECT * fro... quotes" />
-            <marker date="1474104642065" expanded="true" signature="2614:2648" ph="SELECT id_qu... quotes" />
-            <marker date="1474104642065" expanded="true" signature="2614:2667" ph="SELECT id_qu... quotes" />
-            <marker date="1474104642065" expanded="true" signature="2614:2668" ph="SELECT id_qu... quotes" />
-            <marker date="1474104642065" expanded="true" signature="3076:3130" ph="INSERT INTO users_quotes... " />
-            <marker date="1474104642065" expanded="true" signature="3076:3161" ph="INSERT INTO users_quotes... " />
-            <marker date="1474104642065" expanded="true" signature="3076:3180" ph="INSERT INTO users_quotes... " />
-            <marker date="1474104642065" expanded="true" signature="4483:4681" ph="SELECT quote... quotes" />
-            <marker date="1474104642065" expanded="true" signature="4541:4625" ph="SELECT COUNT... users_quotes" />
-            <marker date="1474104642065" expanded="true" signature="4541:4626" ph="SELECT COUNT... users_quotes" />
+            <element signature="e#6#88#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

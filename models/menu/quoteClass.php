@@ -52,7 +52,6 @@ class quoteClass
             $now = date("Y-m-d H:i:s");
             $timeAsString = date("Y-m-d H:i:s", $limitTime);
             $select = 'SELECT quote_id FROM users_quotes WHERE user_id = '.$_SESSION["user_id"].' AND added BETWEEN "'.$timeAsString.'" AND "'.$now.'" ORDER BY added DESC LIMIT 1';
-            error_log($select);
             if ($res = $this->mysqli->query($select)){
                 if($row = $res->fetch_array()){
                     return $row["quote_id"];
@@ -99,10 +98,8 @@ class quoteClass
     }
 
     function registerQuoteInDB($id_quote){
-        error_log("In the register function");
         if(isset($_SESSION["user_id"]) && $_SESSION["user_id"]!= null) {
             $insert = 'INSERT INTO users_quotes (user_id, quote_id) VALUES ("' . $_SESSION["user_id"] . '","' . $id_quote . '")';
-            error_log($insert);
             if (!$this->mysqli->query($insert)) {
                 error_log($this->mysqli->error);
             }
@@ -117,9 +114,7 @@ class quoteClass
         if (!$actualQuote) {
             $selectedQuoteId = $this->getQuoteIdFromRandom();
             if($this->getQuoteInformation($selectedQuoteId)){
-                error_log("about to register the quote");
                 $this->registerQuoteInDB($this->quote_id);
-                error_log("quote registered");
                 $_SESSION["actualQuote"] = $this->quote_id;
                 $_SESSION["quoteTime"] = time();
                 return $this;
