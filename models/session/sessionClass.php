@@ -11,7 +11,7 @@ date_default_timezone_set("Europe/Andorra");
 class sessionClass
 {
     // Seconds for the session to expire, 0=never
-    static $session_time_to_expire = 0;
+    static $session_time_to_expire = 3600;
 
     static function getLoginPath(){
 
