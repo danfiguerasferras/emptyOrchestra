@@ -13,7 +13,7 @@ class quoteClass
     var $value;
     var $added;
     private $mysqli;
-    static protected $sessionLimitTime = 10; /* Seconds until you can get next quote */
+    static protected $sessionLimitTime = 3600; /* Seconds until you can get next quote */
 
     /**
      * quoteClass constructor.
