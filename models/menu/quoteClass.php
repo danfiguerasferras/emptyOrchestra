@@ -23,6 +23,11 @@ class quoteClass
      */
     public function __construct($mysqli = null, $quote_id = 0, $value = "", $added = null)
     {
+        if($mysqli == null){
+            $mysql_link = null;
+            include_once(dirname(__FILE__)."/../../config/mysql/connection.php");
+            $this->mysqli = $mysql_link;
+        }
         $this->mysqli = $mysqli;
         $this->quote_id = $quote_id;
         $this->value = $value;

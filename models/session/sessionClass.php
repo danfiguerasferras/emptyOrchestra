@@ -6,6 +6,7 @@
  * Time: 19:22
  */
 
+
 session_start();
 date_default_timezone_set("Europe/Andorra");
 class sessionClass
