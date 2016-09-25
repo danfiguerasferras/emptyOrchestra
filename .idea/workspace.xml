@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/testQuotes.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/helpers/sanitizeClass.php" afterPath="$PROJECT_DIR$/models/helpers/sanitizeClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/menu/quoteClass.php" afterPath="$PROJECT_DIR$/models/menu/quoteClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/session/sessionClass.php" afterPath="$PROJECT_DIR$/models/session/sessionClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/testQuotes.php" afterPath="$PROJECT_DIR$/test/testQuotes.php" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -90,8 +87,8 @@
       <file leaf-file-name="testQuotes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/testQuotes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="270">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -350,7 +347,7 @@
       <workItem from="1473497308884" duration="4223000" />
       <workItem from="1473596932647" duration="2603000" />
       <workItem from="1474096061771" duration="6491000" />
-      <workItem from="1474812691318" duration="3110000" />
+      <workItem from="1474812691318" duration="3733000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -583,11 +580,18 @@
       <option name="project" value="LOCAL" />
       <updated>1474813080323</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Adding unit test">
+      <created>1474816752514</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1474816752514</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154790000" />
+    <option name="totallyTimeSpent" value="155413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,7 +637,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="trying to make it look cool" />
     <MESSAGE value="about to finish, there's the line blank problem missing" />
     <MESSAGE value="Solving charset issues" />
     <MESSAGE value="Refactor to make everthing more dynamic" />
@@ -658,7 +661,8 @@
     <MESSAGE value="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP" />
     <MESSAGE value="- Fixed mistake with the return on the quoteClass&#10;- Fixed the defined hour in the server to avoid issues&#10;- Time on the query now only depends on PHP&#10;- Quote time back to 3600s" />
     <MESSAGE value="deleting useless error_logs" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleting useless error_logs" />
+    <MESSAGE value="Adding unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding unit test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1002,8 +1006,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/testQuotes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
