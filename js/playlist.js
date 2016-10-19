@@ -55,6 +55,7 @@ function playPauseSong(playButton) {
 
     }else{
         $("#audio_player").trigger("pause");
+        $(".play_button").attr("src", "../images/play-button.png");
         $(playButton).attr("src", "../images/pause-button.png");
         shouldIReloadSong = true;
     }

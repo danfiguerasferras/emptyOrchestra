@@ -14,11 +14,42 @@
         <p>Quote List</p>
         <?php
         $i = 0;
+        $totalSeen = 0;
+        $totalSeenNotUnique = 0;
+
         foreach ($quotesSeen as $qs) {
             $i++;
-            $qs["timesSeen"]==0?$value="???":$value=$qs["value"];
+            if($qs["timesSeen"]==0) {
+                $value = "???";
+            }else {
+                $value = $qs["value"];
+                $totalSeen++;
+                $totalSeenNotUnique+=$qs["timesSeen"];
+            }
             echo '<p>Nº' . $i . ' - Seen ' . $qs["timesSeen"] . ' times: ' . $value . '</p>';
         }
+        /**
+         * Calculating the resume
+         * */
+        $percent = 100/$i*$totalSeen;
+        $percent = round($percent);
+        echo '<p>Has visto '.$totalSeenNotUnique.' quotes de las cuales '.$totalSeen.' sin repetir, te quedan '.($i-$totalSeen).' quotes por ver de un total de '.$i.'.</p>';
+        echo '<p>Has desbloqueado un '.$percent.'% de las quotes!</p>';
+
+        /**
+         * Showing a nice Cheer-up message
+         */
+        $cheerUpMessage = '';
+        if($percent==100){
+            $cheerUpMessage = 'OMG!! Muy bien cariño! Las has desbloqueado todas! I\'m so proud of you! ^^';
+        }elseif ($percent>95){
+            $cheerUpMessage = 'Vamos que ya estás en la recta final! Un ultimo esfuerzo!';
+        }elseif ($percent>85){
+            $cheerUpMessage = 'Va mi vida que ya casi lo tienes!';
+        }elseif($percent>75){
+            $cheerUpMessage = 'Venga cariño que solo te falta un poquitito más!';
+        }
+        echo '<p>'.$cheerUpMessage.'</p>';
         ?>
     </div>
     <div id="playlist">
