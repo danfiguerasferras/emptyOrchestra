@@ -1,10 +1,11 @@
+var rhythm = 400;
 $(document).ready(function(){
     $(".listItem").click(function () {
         hideAllLyrics();
         var itemNumber = $(this).attr("itemNumber");
         var lyricsItem = $("#lyrics_song_"+itemNumber);
         if(lyricsItem.css("display") == "none"){
-            lyricsItem.slideDown(200);
+            lyricsItem.slideDown(rhythm);
         }
     });
 
@@ -20,22 +21,22 @@ $(document).ready(function(){
         $(this).slideUp("fast");
     });
 
-    $("#menuBar").click(function () {
+    $("#menuBar").dblclick(function () {
         var quoteList = $("#quoteList");
         if(quoteList.css("display") == "none"){
-            quoteList.slideDown(200);
+            quoteList.slideDown(rhythm);
         }else{
-            quoteList.slideUp(200);
+            quoteList.slideUp(rhythm);
         }
     });
 
-    $("#quoteList").click(function () {
-        $(this).slideUp(200);
+    $("#quoteList").dblclick(function () {
+        $(this).slideUp(rhythm);
     });
 });
 
 function hideAllLyrics() {
-    $(".song_lyrics").slideUp(200);
+    $(".song_lyrics").slideUp(rhythm);
 }
 
 function playPauseSong(playButton) {
@@ -52,7 +53,6 @@ function playPauseSong(playButton) {
             player.pause();
             $(playButton).attr("src", "../images/play-button.png");
         }
-
     }else{
         $("#audio_player").trigger("pause");
         $(".play_button").attr("src", "../images/play-button.png");

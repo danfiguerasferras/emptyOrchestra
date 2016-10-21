@@ -33,7 +33,26 @@ body{
     line-height: 40px;
 }
 
+/**
+*   QUOTE LIST
+*/
+
 #quote{
+    color: white;
+}
+
+#quoteList{
+    background-color: darkmagenta;
+    padding: 60px 50px 50px 50px;
+    display: none;
+}
+
+.justSeen{
+    color: white !important;
+}
+
+.quoteContent{
+    color:darkgray;
 }
 
 #playlist{
@@ -67,6 +86,21 @@ body{
     height: 200px;
     border: black;
     background-color: blueviolet;
+    display: none;
+}
+
+
+
+/***
+ *  ITEMS ON THE PLAYLIST
+ */
+
+/* Menu */
+.listTitle.songTitle{
+    margin-left: 45px;
+}
+
+.listTitle.songFavorite{
     display: none;
 }
 
@@ -108,8 +142,3 @@ body{
     display: none !important;
 }
 
-#quoteList{
-    background-color: darkmagenta;
-    padding: 60px 50px 50px 50px;
-    display: none;
-}
