@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/playlistView.php" afterPath="$PROJECT_DIR$/html/playlistView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/playlist.js" afterPath="$PROJECT_DIR$/js/playlist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/playlist.css" afterPath="$PROJECT_DIR$/css/playlist.css" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,7 +107,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playlistView.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playlistView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/playlistView.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
@@ -118,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playlist.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playlist.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/playlist.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+            <state relative-caret-position="612">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -186,9 +185,9 @@
         <option value="$PROJECT_DIR$/models/menu/quoteClass.php" />
         <option value="$PROJECT_DIR$/models/helpers/sanitizeClass.php" />
         <option value="$PROJECT_DIR$/test/testQuotes.php" />
-        <option value="$PROJECT_DIR$/css/playlist.css" />
         <option value="$PROJECT_DIR$/js/playlist.js" />
         <option value="$PROJECT_DIR$/html/playlistView.php" />
+        <option value="$PROJECT_DIR$/css/playlist.css" />
       </list>
     </option>
   </component>
@@ -468,7 +467,7 @@
       <workItem from="1476813304282" duration="368000" />
       <workItem from="1476820149790" duration="9000" />
       <workItem from="1476820445697" duration="4317000" />
-      <workItem from="1477074385959" duration="5599000" />
+      <workItem from="1477074385959" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -750,11 +749,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477077559560</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Back to one click, slowed down the slide">
+      <created>1477083292435</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1477083292435</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166663000" />
+    <option name="totallyTimeSpent" value="167716000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -800,7 +806,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Starting with the playlist and the behavior" />
     <MESSAGE value="Text of the information in its place and everything looks good" />
     <MESSAGE value="creating class for the data extraction in the MySQL" />
     <MESSAGE value="database with the first data + dynamic loading of the playlist" />
@@ -825,7 +830,8 @@
     <MESSAGE value="testing git hook" />
     <MESSAGE value="Adding nice cheer-up sentence on the playlist view&#10;&#10;Solving an issue (easy) with the player button" />
     <MESSAGE value="Double click to slide quote list&#10;Changed duration and parametrized&#10;Now quotes on list are gray but the just shown one" />
-    <option name="LAST_COMMIT_MESSAGE" value="Double click to slide quote list&#10;Changed duration and parametrized&#10;Now quotes on list are gray but the just shown one" />
+    <MESSAGE value="Back to one click, slowed down the slide" />
+    <option name="LAST_COMMIT_MESSAGE" value="Back to one click, slowed down the slide" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1136,14 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/playlist.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/playlist.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1156,6 +1154,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/playlist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
           <folding />
         </state>
       </provider>
