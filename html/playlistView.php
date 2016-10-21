@@ -16,11 +16,11 @@
         $i = 0;
         $totalSeen = 0;
         $totalSeenNotUnique = 0;
-        $justShown = false;
         foreach ($quotesSeen as $qs) {
             $i++;
             if ($qs["timesSeen"] == 0) {
                 $value = "???";
+                $justShown = false;
             } else {
                 $value = $qs["value"];
                 $justShown = ($value == $quoteClass->value) ? true : false;

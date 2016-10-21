@@ -1,5 +1,8 @@
-var rhythm = 400;
+var rhythm = 600;
 $(document).ready(function(){
+    /**
+     * Song related
+     */
     $(".listItem").click(function () {
         hideAllLyrics();
         var itemNumber = $(this).attr("itemNumber");
@@ -21,19 +24,30 @@ $(document).ready(function(){
         $(this).slideUp("fast");
     });
 
-    $("#menuBar").dblclick(function () {
-        var quoteList = $("#quoteList");
-        if(quoteList.css("display") == "none"){
-            quoteList.slideDown(rhythm);
-        }else{
-            quoteList.slideUp(rhythm);
-        }
-    });
+    /**
+     * Quote related
+     */
 
-    $("#quoteList").dblclick(function () {
-        $(this).slideUp(rhythm);
-    });
+    $("#menuBar").click(showQuoteList);
+
+    $("#quoteList").click(hideQuoteList);
+
 });
+
+
+
+function showQuoteList() {
+    var quoteList = $("#quoteList");
+    if(quoteList.css("display") == "none"){
+        quoteList.slideDown(rhythm);
+    }else{
+        quoteList.slideUp(rhythm);
+    }
+}
+
+function hideQuoteList() {
+    $(this).slideUp(rhythm);
+}
 
 function hideAllLyrics() {
     $(".song_lyrics").slideUp(rhythm);
