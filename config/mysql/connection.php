@@ -11,7 +11,7 @@ if (!$mysql_link) {
     exit;
 }
 
-if (!$mysql_link->set_charset("utf8")) {
+if (!$mysql_link->set_charset("utf8mb4")) {
     printf("Error loading utf8 charset: %s\n", $mysqli->error);
     exit();
 }
