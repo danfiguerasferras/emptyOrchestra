@@ -6,8 +6,11 @@
 </head>
 <body>
 <div id="fullPage">
+    <div id="emptyOrchestraLogo">
+        <p id="emptyOrchestraTitle">Empty Orchestra</p>
+        <p id="salutation">Hello <?php echo ucfirst($_SESSION["user_name"]); ?></p>
+    </div>
     <div id="menuBar">
-        <p class="menuItem" id="salutation">Hello <?php echo ucfirst($_SESSION["user_name"]); ?></p>
         <p class="menuItem" id="quote"><?php echo $quoteClass->value; ?></p>
     </div>
     <div id="quoteList">

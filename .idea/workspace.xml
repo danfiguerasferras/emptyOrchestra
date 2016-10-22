@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cb083db-932d-462b-a353-72d7c90d16ec" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/fonts/cubic.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/login.php" afterPath="$PROJECT_DIR$/app/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/session/sessionClass.php" afterPath="$PROJECT_DIR$/models/session/sessionClass.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/user/userClass.php" afterPath="$PROJECT_DIR$/models/user/userClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/playlist.css" afterPath="$PROJECT_DIR$/css/playlist.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/playlistView.php" afterPath="$PROJECT_DIR$/html/playlistView.php" />
     </list>
     <ignored path="untitled.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sessionClass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sessionClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="289">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,18 +114,18 @@
       <file leaf-file-name="playlistView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/playlistView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+            <state relative-caret-position="255">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playlist.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="playlist.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/playlist.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+            <state relative-caret-position="406">
+              <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -187,11 +187,11 @@
         <option value="$PROJECT_DIR$/models/helpers/sanitizeClass.php" />
         <option value="$PROJECT_DIR$/test/testQuotes.php" />
         <option value="$PROJECT_DIR$/js/playlist.js" />
-        <option value="$PROJECT_DIR$/html/playlistView.php" />
-        <option value="$PROJECT_DIR$/css/playlist.css" />
         <option value="$PROJECT_DIR$/app/login.php" />
         <option value="$PROJECT_DIR$/models/user/userClass.php" />
         <option value="$PROJECT_DIR$/models/session/sessionClass.php" />
+        <option value="$PROJECT_DIR$/html/playlistView.php" />
+        <option value="$PROJECT_DIR$/css/playlist.css" />
       </list>
     </option>
   </component>
@@ -206,9 +206,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1924" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -342,7 +343,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,50 +360,8 @@
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EmptyOrchestra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emptyOrchestra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EmptyOrchestra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emptyOrchestra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EmptyOrchestra" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="emptyOrchestra" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -419,19 +378,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\emptyOrchestra\css\fonts" />
+      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\config" />
+      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\models\captcha" />
+      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\config\captcha" />
+      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\models\player" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\images" />
       <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\config\mysql\script_backups" />
       <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\src\music" />
       <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\js\externalLibraries" />
       <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\src\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\config" />
-      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\models\captcha" />
-      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\config\captcha" />
-      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\models\player" />
-      <recent name="C:\Users\blad3r\PhpstormProjects\EmptyOrchestra\config\mysql\script_backups" />
     </key>
   </component>
   <component name="RunManager">
@@ -522,7 +481,7 @@
       <workItem from="1476820445697" duration="4317000" />
       <workItem from="1477074385959" duration="8111000" />
       <workItem from="1477126655837" duration="500000" />
-      <workItem from="1477127459533" duration="2295000" />
+      <workItem from="1477127459533" duration="5961000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1470675299443</created>
@@ -818,11 +777,18 @@
       <option name="project" value="LOCAL" />
       <updated>1477084349821</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Login by token implemented">
+      <created>1477129782742</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1477129782742</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171970000" />
+    <option name="totallyTimeSpent" value="175636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -834,10 +800,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1924" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12683438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30010834" sideWeight="0.4978678" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -868,7 +834,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creating class for the data extraction in the MySQL" />
     <MESSAGE value="database with the first data + dynamic loading of the playlist" />
     <MESSAGE value="playing music :D" />
     <MESSAGE value="well exported DB" />
@@ -893,7 +858,8 @@
     <MESSAGE value="Double click to slide quote list&#10;Changed duration and parametrized&#10;Now quotes on list are gray but the just shown one" />
     <MESSAGE value="Back to one click, slowed down the slide" />
     <MESSAGE value="style by color not  by color name" />
-    <option name="LAST_COMMIT_MESSAGE" value="style by color not  by color name" />
+    <MESSAGE value="Login by token implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Login by token implemented" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1151,30 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/playlist.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/playlistView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/playlist.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -1207,14 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/playlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/user/userClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -1229,8 +1163,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/session/sessionClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="289">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/playlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/playlistView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/playlist.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="78" column="32" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
           <folding />
         </state>
       </provider>

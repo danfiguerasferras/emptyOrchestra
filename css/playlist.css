@@ -5,6 +5,7 @@ body{
     margin: 0px;
     color:azure;
 }
+
 #fullPage{
     height: 100%;
     width: 100%;
@@ -14,7 +15,7 @@ body{
 
 #menuBar{
     position: fixed;
-    height: 40px;
+    height: 60px;
     width: 100%;
     background-color: darkblue;
     display: block;
@@ -23,14 +24,40 @@ body{
 }
 
 #salutation{
-    float: left;
+    margin-left: 340px;
     z-index: 10;
 }
 
 .menuItem{
     padding-left:0;
     margin: 0;
+    line-height: 60px;
+}
+
+/**
+*   TITLE
+*/
+
+@font-face {
+    font-family: cubic;
+    src: url("fonts/cubic.ttf") format("truetype");
+}
+
+#emptyOrchestraLogo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
     line-height: 40px;
+    z-index: 15;
+}
+
+#emptyOrchestraTitle{
+    margin: 0px;
+    font-family: cubic;
+    font-size: 40px;
+}
+
+#salutation{
 }
 
 /**
@@ -39,11 +66,18 @@ body{
 
 #quote{
     color: white;
+    font-size: 22px;
+}
+
+.listTitle{
+    margin: 0px;
+    line-height: 40px;
 }
 
 #quoteList{
     background-color: darkmagenta;
-    padding: 60px 50px 50px 50px;
+    /*background-color: black;*/
+    padding: 120px 50px 50px 50px;
     display: none;
 }
 
@@ -56,8 +90,9 @@ body{
 }
 
 #playlist{
-    padding: 100px 2% 30px 2%;
-    background-color: chartreuse;
+    padding: 150px 2% 30px 2%;
+    /*background-color: chartreuse;*/
+    background-color: black;
 }
 
 /* List of items */
@@ -96,6 +131,10 @@ body{
  */
 
 /* Menu */
+#song_information_title{
+    background-color: darkorange;
+}
+
 .listTitle.songTitle{
     margin-left: 45px;
 }
