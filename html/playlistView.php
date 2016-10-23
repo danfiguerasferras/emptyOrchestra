@@ -1,6 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/playlist.css">
+    <link rel="stylesheet" type="text/css" href="../css/playlistLyricPlayer.css">
     <script src="../js/externalLibraries/jquery.min.js"></script>
     <script src="../js/playlist.js"></script>
 </head>
@@ -85,7 +86,22 @@
                     <p class="listText songFavorite"><?php echo $song->favorite; ?></p>
                 </div>
                 <div id="lyrics_song_<?php echo $song->id_song; ?>" class="song_lyrics">
-                    test
+                    <div class="lyrics">
+                    <?php
+                    $languages = ["catalan", "spanish", "english"];
+                    $totalLines = 5;
+                    $middleLine = round($totalLines/2, 0, PHP_ROUND_HALF_DOWN); // Get the middle line
+                    foreach($languages as $language){
+                        echo '<div id="'.$language.'Lyrics">';
+                        echo '<p class="lyricsLanguageTitle">'.$language.'</p>';
+                        for ($i=0;$i<$totalLines;$i++){
+                            $classMiddle = ($i==$middleLine)?'actualLyricsLine ':'';
+                            echo '<p id="'.$language.'_line_'.($i+1).'" class="'.$classMiddle.'lyricsLine"></p>';
+                        }
+                        echo '</div>';
+                    }
+                    ?>
+                    </div>
                 </div>
                 <?php
             }

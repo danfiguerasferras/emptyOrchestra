@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.lyricsLanguageTitle{
+    margin: 0px;
+}
+
+.lyricsLine{
+    display: list-item;
+    list-style-type:none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.songImageDiv{
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.songInformation{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    float: left;
+}
+
+#audioPlayer{
+    margin: 0px;
+    padding: 0px;
+}
+
+.lyrics{
+    width: 100%;
+    float: left;
+    display: inline-flex;
+}
+
+#catalanLyrics{
+    background: rgba(255, 255, 220, 0.4);
+}
+
+#spanishLyrics{
+    background: rgba(255, 220, 255, 0.4);
+}
+
+#englishLyrics{
+    background: rgba(220, 255, 255, 0.4);
+}
+
+#catalanLyrics, #spanishLyrics, #englishLyrics{
+    float: left;
+    height: 302px;
+    font-weight: bold;
+    padding: 20px 10px 10px 10px;
+    width: 33%;
+}
+
+.lyricsLanguageTitle{
+    font-size: 20px;
+    padding: 0px 0px 0px 50px;
+    height: 32px;
+}
+
+.actualLyricsLine{
+    color: #000000;
+    display: list-item;
+}
+
+.lyricsContainer{
+    text-align: center;
+    color: #111;
+    height: 270px;
+    line-height: calc(270px/5);
+}

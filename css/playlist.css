@@ -4,6 +4,7 @@
 body{
     margin: 0px;
     color:azure;
+    font-family: Tahoma;
 }
 
 #fullPage{
@@ -118,9 +119,9 @@ body{
 
 /* Div with the lyrics */
 .song_lyrics{
-    height: 200px;
+    width: 100%;
     border: black;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     display: none;
 }
 
