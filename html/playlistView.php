@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="../css/playlistLyricPlayer.css">
     <script src="../js/externalLibraries/jquery.min.js"></script>
     <script src="../js/playlist.js"></script>
+    <script src="../js/playlistLyricPlayer.js"></script>
 </head>
 <body>
 <div id="fullPage">
@@ -76,7 +77,7 @@
             foreach ($playlist->getSongs() as $song) {
                 ?>
                 <div id="song_information_<?php echo $song->id_song; ?>" itemNumber="<?php echo $song->id_song; ?> "
-                     class="listItem">
+                     class="listItem" songFileName="<?php echo $song->file_name; ?>">
                     <img src="../images/play-button.png" class="play_button"
                          id="play_button_<?php echo $song->id_song; ?>" songName="<?php echo $song->file_name; ?>"
                          itemNumber="<?php echo $song->id_song; ?>">
@@ -93,7 +94,7 @@
                     $middleLine = round($totalLines/2, 0, PHP_ROUND_HALF_DOWN); // Get the middle line
                     foreach($languages as $language){
                         echo '<div id="'.$language.'Lyrics">';
-                        echo '<p class="lyricsLanguageTitle">'.$language.'</p>';
+                        echo '<p class="lyricsLanguageTitle">'.ucfirst($language).'</p>';
                         for ($i=0;$i<$totalLines;$i++){
                             $classMiddle = ($i==$middleLine)?'actualLyricsLine ':'';
                             echo '<p id="'.$language.'_line_'.($i+1).'" class="'.$classMiddle.'lyricsLine"></p>';

@@ -1,15 +1,12 @@
-var rhythm = 600;
+var rhythm = 600; /* Time it takes to slide the tabs */
+
 $(document).ready(function(){
     /**
      * Song related
      */
     $(".listItem").click(function () {
         hideAllLyrics();
-        var itemNumber = $(this).attr("itemNumber");
-        var lyricsItem = $("#lyrics_song_"+itemNumber);
-        if(lyricsItem.css("display") == "none"){
-            lyricsItem.slideDown(rhythm);
-        }
+        getLyrics(this);
     });
 
     $(".play_button").click(function () {
