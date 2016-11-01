@@ -76,7 +76,7 @@
             <?php
             foreach ($playlist->getSongs() as $song) {
                 ?>
-                <div id="song_information_<?php echo $song->id_song; ?>" itemNumber="<?php echo $song->id_song; ?> "
+                <div id="song_information_<?php echo $song->id_song; ?>" itemNumber="<?php echo $song->id_song; ?>"
                      class="listItem" songFileName="<?php echo $song->file_name; ?>">
                     <img src="../images/play-button.png" class="play_button"
                          id="play_button_<?php echo $song->id_song; ?>" songName="<?php echo $song->file_name; ?>"
@@ -97,7 +97,7 @@
                         echo '<p class="lyricsLanguageTitle">'.ucfirst($language).'</p>';
                         for ($i=0;$i<$totalLines;$i++){
                             $classMiddle = ($i==$middleLine)?'actualLyricsLine ':'';
-                            echo '<p id="'.$language.'_line_'.($i+1).'" class="'.$classMiddle.'lyricsLine"></p>';
+                            echo '<p id="'.$song->id_song.'_'.$language.'_line_'.($i+1).'" class="'.$classMiddle.'lyricsLine"></p>';
                         }
                         echo '</div>';
                     }

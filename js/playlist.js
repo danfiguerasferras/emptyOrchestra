@@ -4,24 +4,18 @@ $(document).ready(function(){
     /**
      * Song related
      */
-    $(".listItem").click(function () {
-        hideAllLyrics();
-        getLyrics(this);
-    });
 
     $(".play_button").click(function () {
         var shouldIReloadSong = playPauseSong(this);
         if(shouldIReloadSong){
+            getLyrics(this);
+            hideAllLyrics();
             loadSong($(this).attr("songName"));
         }
         return false;
     });
 
-    $(".song_lyrics").click(function () {
-        $(this).slideUp("fast");
-    });
-
-    /**
+     /**
      * Quote related
      */
 
